@@ -12,15 +12,20 @@ namespace CoureWork
 {
 	public partial class PhonesForm : Form
 	{
-		MainForm mainForm = new MainForm();
+		
 		public PhonesForm()
 		{
 			InitializeComponent();
 		}
 
-		private void roundButton5_Click(object sender, EventArgs e)
+		private void backButton_Click(object sender, EventArgs e)
 		{
-			
+			Hide();
+		}
+
+		private void backButton_Click_1(object sender, EventArgs e)
+		{
+			Hide();
 		}
 	}
 }

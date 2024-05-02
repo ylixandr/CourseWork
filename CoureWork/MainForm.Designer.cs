@@ -34,11 +34,10 @@
 			this.cartButton = new CoureWork.RoundButton();
 			this.walletButton = new CoureWork.RoundButton();
 			this.categoryButton = new CoureWork.RoundButton();
-			this.homeButton = new CoureWork.RoundButton();
 			this.eShopLabel = new System.Windows.Forms.Label();
 			this.cartPicture = new System.Windows.Forms.PictureBox();
 			this.userPicture = new System.Windows.Forms.PictureBox();
-			this.userName = new System.Windows.Forms.Label();
+			this.userNameLabel = new System.Windows.Forms.Label();
 			this.contactLabel = new System.Windows.Forms.Label();
 			this.instPicture = new System.Windows.Forms.PictureBox();
 			this.vkPicture = new System.Windows.Forms.PictureBox();
@@ -63,7 +62,6 @@
 			this.leftPanel.Controls.Add(this.cartButton);
 			this.leftPanel.Controls.Add(this.walletButton);
 			this.leftPanel.Controls.Add(this.categoryButton);
-			this.leftPanel.Controls.Add(this.homeButton);
 			this.leftPanel.Controls.Add(this.eShopLabel);
 			this.leftPanel.Controls.Add(this.cartPicture);
 			this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -88,11 +86,12 @@
 			this.userButton.ButtonRoundRadius = 30;
 			this.userButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.userButton.ForeColor = System.Drawing.Color.White;
-			this.userButton.Location = new System.Drawing.Point(55, 485);
+			this.userButton.Location = new System.Drawing.Point(55, 473);
 			this.userButton.Name = "userButton";
 			this.userButton.Size = new System.Drawing.Size(170, 55);
 			this.userButton.TabIndex = 1;
 			this.userButton.Text = "Пользователь";
+			this.userButton.Click += new System.EventHandler(this.userButton_Click);
 			// 
 			// cartButton
 			// 
@@ -107,7 +106,7 @@
 			this.cartButton.ButtonPressedForeColor = System.Drawing.Color.White;
 			this.cartButton.ButtonRoundRadius = 30;
 			this.cartButton.ForeColor = System.Drawing.Color.White;
-			this.cartButton.Location = new System.Drawing.Point(55, 398);
+			this.cartButton.Location = new System.Drawing.Point(55, 385);
 			this.cartButton.Name = "cartButton";
 			this.cartButton.Size = new System.Drawing.Size(162, 56);
 			this.cartButton.TabIndex = 1;
@@ -126,7 +125,7 @@
 			this.walletButton.ButtonPressedForeColor = System.Drawing.Color.White;
 			this.walletButton.ButtonRoundRadius = 30;
 			this.walletButton.ForeColor = System.Drawing.Color.White;
-			this.walletButton.Location = new System.Drawing.Point(55, 305);
+			this.walletButton.Location = new System.Drawing.Point(55, 287);
 			this.walletButton.Name = "walletButton";
 			this.walletButton.Size = new System.Drawing.Size(162, 57);
 			this.walletButton.TabIndex = 1;
@@ -145,32 +144,12 @@
 			this.categoryButton.ButtonPressedForeColor = System.Drawing.Color.White;
 			this.categoryButton.ButtonRoundRadius = 30;
 			this.categoryButton.ForeColor = System.Drawing.Color.White;
-			this.categoryButton.Location = new System.Drawing.Point(55, 221);
+			this.categoryButton.Location = new System.Drawing.Point(55, 194);
 			this.categoryButton.Name = "categoryButton";
 			this.categoryButton.Size = new System.Drawing.Size(162, 58);
 			this.categoryButton.TabIndex = 1;
 			this.categoryButton.Text = "Категории";
 			this.categoryButton.Click += new System.EventHandler(this.categoryButton_Click);
-			// 
-			// homeButton
-			// 
-			this.homeButton.BackColor = System.Drawing.Color.Gainsboro;
-			this.homeButton.BackColor2 = System.Drawing.Color.SkyBlue;
-			this.homeButton.ButtonBorderColor = System.Drawing.Color.Black;
-			this.homeButton.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.homeButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.homeButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.homeButton.ButtonPressedColor = System.Drawing.Color.Red;
-			this.homeButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.homeButton.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.homeButton.ButtonRoundRadius = 30;
-			this.homeButton.ForeColor = System.Drawing.Color.White;
-			this.homeButton.Location = new System.Drawing.Point(55, 140);
-			this.homeButton.Name = "homeButton";
-			this.homeButton.Size = new System.Drawing.Size(162, 52);
-			this.homeButton.TabIndex = 1;
-			this.homeButton.Text = "Домой";
-			this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
 			// 
 			// eShopLabel
 			// 
@@ -203,14 +182,14 @@
 			this.userPicture.TabIndex = 1;
 			this.userPicture.TabStop = false;
 			// 
-			// userName
+			// userNameLabel
 			// 
-			this.userName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.userName.Location = new System.Drawing.Point(860, 11);
-			this.userName.Name = "userName";
-			this.userName.Size = new System.Drawing.Size(132, 49);
-			this.userName.TabIndex = 2;
-			this.userName.Text = "ylixandr";
+			this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.userNameLabel.Location = new System.Drawing.Point(860, 11);
+			this.userNameLabel.Name = "userNameLabel";
+			this.userNameLabel.Size = new System.Drawing.Size(132, 49);
+			this.userNameLabel.TabIndex = 2;
+			this.userNameLabel.Text = "ylixandr";
 			// 
 			// contactLabel
 			// 
@@ -304,7 +283,7 @@
 			this.Controls.Add(this.myLine3);
 			this.Controls.Add(this.myLine2);
 			this.Controls.Add(this.myLine1);
-			this.Controls.Add(this.userName);
+			this.Controls.Add(this.userNameLabel);
 			this.Controls.Add(this.userPicture);
 			this.Controls.Add(this.leftPanel);
 			this.Margin = new System.Windows.Forms.Padding(4);
@@ -325,12 +304,11 @@
 		private System.Windows.Forms.Panel leftPanel;
 		private System.Windows.Forms.PictureBox cartPicture;
 		private System.Windows.Forms.Label eShopLabel;
-		private RoundButton homeButton;
 		private RoundButton cartButton;
 		private RoundButton walletButton;
 		private RoundButton categoryButton;
 		private System.Windows.Forms.PictureBox userPicture;
-		private System.Windows.Forms.Label userName;
+		private System.Windows.Forms.Label userNameLabel;
 		private RoundButton userButton;
 		private Elements.MyLine myLine1;
 		private Elements.MyLine myLine3;

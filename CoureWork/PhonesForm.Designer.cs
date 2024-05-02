@@ -30,6 +30,7 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhonesForm));
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.backButton = new CoureWork.RoundButton();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
 			this.listBox7 = new System.Windows.Forms.ListBox();
@@ -58,7 +59,6 @@
 			this.roundButton1 = new CoureWork.RoundButton();
 			this.priceLabelIphone = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.roundButton5 = new CoureWork.RoundButton();
 			this.panel1.SuspendLayout();
 			this.panel5.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -72,7 +72,7 @@
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.roundButton5);
+			this.panel1.Controls.Add(this.backButton);
 			this.panel1.Controls.Add(this.panel5);
 			this.panel1.Controls.Add(this.panel4);
 			this.panel1.Controls.Add(this.panel3);
@@ -82,6 +82,26 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(987, 768);
 			this.panel1.TabIndex = 0;
+			// 
+			// backButton
+			// 
+			this.backButton.BackColor = System.Drawing.Color.SkyBlue;
+			this.backButton.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.backButton.ButtonBorderColor = System.Drawing.Color.Black;
+			this.backButton.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.backButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.backButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.backButton.ButtonPressedColor = System.Drawing.Color.Red;
+			this.backButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.backButton.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.backButton.ButtonRoundRadius = 30;
+			this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.backButton.Location = new System.Drawing.Point(396, 709);
+			this.backButton.Name = "backButton";
+			this.backButton.Size = new System.Drawing.Size(186, 54);
+			this.backButton.TabIndex = 1;
+			this.backButton.Text = "НАЗАД";
+			this.backButton.Click += new System.EventHandler(this.backButton_Click_1);
 			// 
 			// panel5
 			// 
@@ -455,26 +475,6 @@
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
-			// roundButton5
-			// 
-			this.roundButton5.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton5.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton5.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton5.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton5.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton5.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton5.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton5.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton5.ButtonRoundRadius = 30;
-			this.roundButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton5.Location = new System.Drawing.Point(396, 709);
-			this.roundButton5.Name = "roundButton5";
-			this.roundButton5.Size = new System.Drawing.Size(186, 54);
-			this.roundButton5.TabIndex = 1;
-			this.roundButton5.Text = "НАЗАД";
-			this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
-			// 
 			// PhonesForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -528,6 +528,6 @@
 		private RoundButton roundButton4;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.PictureBox pictureBox4;
-		private RoundButton roundButton5;
+		private RoundButton backButton;
 	}
 }

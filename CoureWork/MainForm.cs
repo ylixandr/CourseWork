@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login_and_Register_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,19 +14,18 @@ namespace CoureWork
 {
 	public partial class MainForm : Form
 	{
-		PhonesForm phonesForm = new PhonesForm();
+		
 		public MainForm()
 		{
 			InitializeComponent();
 			leftPanel.BackColor = Color.FromArgb(83,66,194);
 			eShopLabel.BackColor = Color.FromArgb(83, 66, 194);
 			eShopLabel.ForeColor = Color.White;
-			homeButton.BackColor = Color.FromArgb(83, 66, 194);
+			
 			categoryButton.BackColor = Color.FromArgb(83, 66, 194);
 			walletButton.BackColor = Color.FromArgb(83, 66, 194);
 			cartButton.BackColor = Color.FromArgb(83, 66, 194);
-			homeButton.ForeColor = Color.White;
-			homeButton.BackColor2 = Color.FromArgb(83, 66, 194);
+			
 			categoryButton.BackColor2 = Color.FromArgb(83, 66, 194);
 			walletButton.BackColor2 = Color.FromArgb(83, 66, 194);
 			cartButton.BackColor2 = Color.FromArgb(83, 66, 194);
@@ -98,19 +98,9 @@ namespace CoureWork
 			
 		}
 
-		private void homeButton_Click(object sender, EventArgs e)
-		{
-			HomeButton();
 		
-		}
 
-		private void HomeButton()
-		{
-			categoryControl.Visible = false;
-
-
-			
-		}
+		
 
 		private void CategoryButton()
 		{
@@ -119,6 +109,18 @@ namespace CoureWork
 				
 		}
 
+		private void userButton_Click(object sender, EventArgs e)
+		{
+			frmRegister frmRegister = new frmRegister();
+			frmRegister.Show();
+			
+			
+			
+		}
 
+		public void UpdateUserName(string userName)
+		{
+			userNameLabel.Text = userName;
+		}
 	}
 }

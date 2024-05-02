@@ -17,3 +17,6 @@ C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.pdb
 C:\Users\User\source\repos\CoureWork\CoureWork\bin\Debug\CoureWork.pdb
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.csproj.Up2Date
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.MainForm.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\Login_and_Register_System.LoginForm.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\Login_and_Register_System.frmRegister.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\Login_and_Register_System.Dashboard.resources

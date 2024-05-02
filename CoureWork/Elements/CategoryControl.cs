@@ -13,7 +13,7 @@ namespace CoureWork
 {
 	public partial class CategoryControl : UserControl
 	{
-		PhonesForm phonesForm = new PhonesForm();
+		
 		public CategoryControl()
 		{
 			InitializeComponent();
@@ -34,8 +34,10 @@ namespace CoureWork
 
 		private void phoneButton_Click(object sender, EventArgs e)
 		{
-			this.Hide();
+			PhonesForm phonesForm = new PhonesForm();
 			phonesForm.Show();
+			this.Hide();
+
 		}
 
 		private void phonesDesign2_Load(object sender, EventArgs e)
