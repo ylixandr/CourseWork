@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\CoureWork\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|c:\\users\\user\\source\\repos\\courework\\courework\\phonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\phonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\elements\\categorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\elements\\categorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\elements\\categorycontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\elements\\categorycontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\elements\\categorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\elements\\categorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\phonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\phonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\elements\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\elements\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhonesForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\PhonesForm.cs",
+              "RelativeDocumentMoniker": "CoureWork\\PhonesForm.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\PhonesForm.cs*",
+              "RelativeToolTip": "CoureWork\\PhonesForm.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T21:06:01.726Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PhonesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\PhonesForm.cs",
+              "RelativeDocumentMoniker": "CoureWork\\PhonesForm.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\PhonesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "CoureWork\\PhonesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:54:41.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\CategoryControl.Designer.cs",
+              "RelativeDocumentMoniker": "CoureWork\\Elements\\CategoryControl.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\CategoryControl.Designer.cs",
+              "RelativeToolTip": "CoureWork\\Elements\\CategoryControl.Designer.cs",
+              "ViewState": "AQIAAN4AAAAAAAAAAAAowPUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:53:31.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryControl.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\CategoryControl.cs",
+              "RelativeDocumentMoniker": "CoureWork\\Elements\\CategoryControl.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\CategoryControl.cs",
+              "RelativeToolTip": "CoureWork\\Elements\\CategoryControl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:31:44.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\CategoryControl.cs",
+              "RelativeDocumentMoniker": "CoureWork\\Elements\\CategoryControl.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\CategoryControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CoureWork\\Elements\\CategoryControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T21:42:53.359Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Form1.cs",
+              "RelativeDocumentMoniker": "CoureWork\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Form1.cs*",
+              "RelativeToolTip": "CoureWork\\Form1.cs*",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAYwGAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T13:02:40.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Form1.cs",
+              "RelativeDocumentMoniker": "CoureWork\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "CoureWork\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T12:50:41.935Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RoundedButton.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\RoundedButton.cs",
+              "RelativeDocumentMoniker": "CoureWork\\Elements\\RoundedButton.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Elements\\RoundedButton.cs",
+              "RelativeToolTip": "CoureWork\\Elements\\RoundedButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000587|",
+              "WhenOpened": "2024-04-30T20:10:30.203Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
