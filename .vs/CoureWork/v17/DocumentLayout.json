@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\CoureWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|c:\\users\\user\\source\\repos\\courework\\courework\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,15 +19,15 @@
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|c:\\users\\user\\source\\repos\\courework\\courework\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|c:\\users\\user\\source\\repos\\courework\\courework\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|c:\\users\\user\\source\\repos\\courework\\courework\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\phonesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|c:\\users\\user\\source\\repos\\courework\\courework\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|C:\\Users\\User\\source\\repos\\CoureWork\\courework\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1796831-A7E1-45EA-935C-50B2F2BCCA28}|CoureWork\\CoureWork.csproj|solutionrelative:courework\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -73,8 +73,7 @@
               "RelativeToolTip": "CoureWork\\Account.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T17:38:07.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T17:38:07.551Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "CoureWork\\MainForm.Designer.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAWwD8AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T17:36:52.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T17:36:52.286Z"
             },
             {
               "$type": "Document",
@@ -98,8 +96,7 @@
               "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "CoureWork\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T16:46:23.672Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-05-02T16:46:23.672Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\Dashboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "CoureWork\\Dashboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T16:44:38.413Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-05-02T16:44:38.413Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "CoureWork\\RegForm.cs",
               "ViewState": "AQIAAEEAAAAAAAAAAAAmwGAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T15:40:14.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T15:40:14.492Z"
             },
             {
               "$type": "Document",
@@ -135,8 +130,7 @@
               "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\RegForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "CoureWork\\RegForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T15:39:11.735Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-05-02T15:39:11.735Z"
             },
             {
               "$type": "Document",
@@ -160,8 +154,7 @@
               "RelativeToolTip": "CoureWork\\LoginForm.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAkwDwAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T14:56:47.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T14:56:47.845Z"
             },
             {
               "$type": "Document",
@@ -173,8 +166,7 @@
               "RelativeToolTip": "CoureWork\\PhonesForm.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T14:22:26.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T14:22:26.698Z"
             },
             {
               "$type": "Document",
@@ -198,8 +190,7 @@
               "ToolTip": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "CoureWork\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T12:50:41.935Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-04-25T12:50:41.935Z"
             }
           ]
         }
