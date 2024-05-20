@@ -56,7 +56,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
+    <Compile Include="Categories\LaptopsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\LaptopsForm.Designer.cs">
+      <DependentUpon>LaptopsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Account.cs" />
+    <Compile Include="Context\ApplicationDbContext.cs" />
+    <Compile Include="Context\Cart.cs" />
+    <Compile Include="Context\Category.cs" />
+    <Compile Include="Context\Laptop.cs" />
+    <Compile Include="Context\Smartphone.cs" />
+    <Compile Include="Context\Smartwatch.cs" />
+    <Compile Include="Context\TV.cs" />
+    <Compile Include="Context\Wallet.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,10 +98,23 @@
     <Compile Include="Elements\CategoryControl.Designer.cs">
       <DependentUpon>CategoryControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhonesForm.cs">
+    <Compile Include="Migrations\202405200535449_InitialCreate.cs" />
+    <Compile Include="Migrations\202405200535449_InitialCreate.Designer.cs">
+      <DependentUpon>202405200535449_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405200537144_Firstogr.cs" />
+    <Compile Include="Migrations\202405200537144_Firstogr.Designer.cs">
+      <DependentUpon>202405200537144_Firstogr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405200545166_AddingToWallet.cs" />
+    <Compile Include="Migrations\202405200545166_AddingToWallet.Designer.cs">
+      <DependentUpon>202405200545166_AddingToWallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Categories\PhonesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhonesForm.Designer.cs">
+    <Compile Include="Categories\PhonesForm.Designer.cs">
       <DependentUpon>PhonesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -101,6 +128,9 @@
     <Compile Include="RegForm.Designer.cs">
       <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Categories\LaptopsForm.resx">
+      <DependentUpon>LaptopsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,7 +143,16 @@
     <EmbeddedResource Include="Elements\CategoryControl.resx">
       <DependentUpon>CategoryControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhonesForm.resx">
+    <EmbeddedResource Include="Migrations\202405200535449_InitialCreate.resx">
+      <DependentUpon>202405200535449_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405200537144_Firstogr.resx">
+      <DependentUpon>202405200537144_Firstogr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405200545166_AddingToWallet.resx">
+      <DependentUpon>202405200545166_AddingToWallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\PhonesForm.resx">
       <DependentUpon>PhonesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -129,6 +168,7 @@
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,10 +180,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="img\icons8-instagram-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\icons8-instagram-48.png" />
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

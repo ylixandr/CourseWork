@@ -10,21 +10,23 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 using CoureWork;
+using CoureWork.Context;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Runtime.Remoting.Contexts;
 
 namespace Login_and_Register_System
 {
-    public partial class LoginForm : Form
-    {
-		
+	public partial class LoginForm : Form
+	{
+
 
 		public LoginForm()
 		{
 			InitializeComponent();
-			
+
+
 		}
-		SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings.Get("MyConnection"));
-		SqlCommand cmd = new SqlCommand();
-		SqlDataAdapter da = new SqlDataAdapter();
+
 		private void label6_Click(object sender, EventArgs e)
 		{
 			new frmRegister().Show();
@@ -38,43 +40,47 @@ namespace Login_and_Register_System
 			txtUsername.Focus();
 		}
 
-	
+
 
 		private void registrationButton_Click_1(object sender, EventArgs e)
 		{
-			if (conn != null && conn.State == ConnectionState.Open)
-			{
-				conn.Close();
-			}
-			conn.Open();
-			string login = ("SELECT * FROM csharp_user WHERE username =  '" + txtUsername.Text + "' and password = '" + txtPassword.Text + "' ");
-			cmd = new SqlCommand(login, conn);
-			SqlDataReader dr = cmd.ExecuteReader();
+			string username = txtUsername.Text;
+			string password = txtPassword.Text;
 
-
-			if (dr.Read() == true)
+			try
 			{
-				
-				conn.Close();
-				new Dashboard().Show();
-				Dashboard.instance.lbl.Text = txtUsername.Text;
-				this.Hide();
-
-				
-				
-			}
-			else
-			{
-				MessageBox.Show("Неккоректные данные. Введите еще раз", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				txtUsername.Text = "";
-				txtPassword.Text = "";
-				txtUsername.Focus();
-				if (conn != null && conn.State == ConnectionState.Closed)
+				using (ApplicationDbContext db = new ApplicationDbContext())
 				{
-					conn.Open();
+					var user = db.Account.SingleOrDefault(a => a.UserName == username && a.Password == password);
+					if (user != null)
+					{
+						// Успешный вход
+						user.IsLoged = true;
+						db.SaveChanges();
+
+						MainForm main = new MainForm();
+						main.Show();
+						this.Hide();
+
+
+					}
+					else
+					{
+						MessageBox.Show("Неккоректные данные. Введите еще раз", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						txtUsername.Text = "";
+						txtPassword.Text = "";
+						txtUsername.Focus();
+					}
 				}
+				
+
 			}
-		}
+			catch (Exception ex)
+			{
+				MessageBox.Show($"Failed {ex.Message}","Login Failed",MessageBoxButtons.OK,MessageBoxIcon.Error);
+			}
+		}	
+	
 
 		private void checkboxShowPass_CheckedChanged_1(object sender, EventArgs e)
 		{

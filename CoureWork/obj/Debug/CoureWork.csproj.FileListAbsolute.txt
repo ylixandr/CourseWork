@@ -20,3 +20,8 @@ C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.MainForm.reso
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\Login_and_Register_System.LoginForm.resources
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\Login_and_Register_System.frmRegister.resources
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\Login_and_Register_System.Dashboard.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\CoureWork\CoureWork\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Migrations.InitialCreate.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Migrations.Firstogr.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Migrations.AddingToWallet.resources

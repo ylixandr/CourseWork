@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8f2kTaZFfdqY2yx1S2D3Lo9WNAjQYHNBi2R6yqcmzUgTlNGHpZ7wovqyLsEZXBMi7Xh0NUa/wwOGB78DCGKSFQ==",
+  "dgSpecHash": "0WlK2qmImDK/qSoqzs8vj34EW6OXkPtCWH7YXO4b3Ec5LdOQxU1KWbdNuSlmeLqbwC/mPlmngaiFSkFMlq30GQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\CoureWork\\CoureWork\\CoureWork.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512"
+  ],
   "logs": []
 }

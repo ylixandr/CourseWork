@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
+using CoureWork.Context;
+using CoureWork;
 
 namespace Login_and_Register_System
 {
@@ -17,11 +19,26 @@ namespace Login_and_Register_System
         public frmRegister()
         {
             InitializeComponent();
-        }
+			using (ApplicationDbContext dbContext = new ApplicationDbContext())
+			{
+				try
+				{
+					var accs = dbContext.Account.ToList();
+					foreach (var ac in accs)
+					{
+						ac.IsLoged = false;
+					}
+					dbContext.SaveChanges();
+					MessageBox.Show("Niharagua");
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			}
+		}
 
-		SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings.Get("MyConnection"));
-		SqlCommand cmd = new SqlCommand();
-		SqlDataAdapter da = new SqlDataAdapter();
+		
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
@@ -48,23 +65,24 @@ namespace Login_and_Register_System
 			}
 			else if (txtPassword.Text == txtComPassword.Text)
 			{
-				try
+
+				using (ApplicationDbContext db = new ApplicationDbContext())
 				{
-					conn.Open();
-					MessageBox.Show("Соединение открыто");
-					string register = "INSERT INTO csharp_user (username,password) VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "')";
-					cmd = new SqlCommand(register, conn);
-					cmd.ExecuteNonQuery();
-					conn.Close();
-					txtUsername.Text = "";
-					txtPassword.Text = "";
-					txtComPassword.Text = "";
-					MessageBox.Show("Аккаунт успешно создан", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					try
+					{
+						db.Account.Add(new Account(txtUsername.Text, txtPassword.Text));
+						db.SaveChanges();
+						txtUsername.Text = "";
+						txtPassword.Text = "";
+						txtComPassword.Text = "";
+						MessageBox.Show("Аккаунт успешно создан", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					}
+					catch (Exception ex)
+					{
+						MessageBox.Show(ex.Message);
+					}
 				}
-				catch (Exception ex)
-				{
-					MessageBox.Show(ex.Message);
-				}
+
 			}
 			else
 			{
