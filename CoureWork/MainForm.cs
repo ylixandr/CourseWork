@@ -1,4 +1,5 @@
-﻿using Login_and_Register_System;
+﻿using CoureWork.Context;
+using Login_and_Register_System;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,11 @@ namespace CoureWork
 			cartButton.BackColor2 = Color.FromArgb(83, 66, 194);
 			userButton.BackColor2 = Color.FromArgb(83, 66, 194);
 			userButton.BackColor = Color.FromArgb(83, 66, 194);
+			using(ApplicationDbContext db = new ApplicationDbContext())
+			{
+				var accountId = db.Account.First(x => x.IsLoged).Id;
+				balanceLabel.Text = db.Wallet.First(x => x.AccountId == accountId).Balance.ToString();
+			}
 
 
 			
@@ -104,7 +110,15 @@ namespace CoureWork
 
 		private void CategoryButton()
 		{
-			categoryControl.Visible = true;
+			if(categoryControl.Visible)
+			{
+				categoryControl.Visible = false;
+			}
+			else
+			{
+				categoryControl.Visible = true;
+			}
+			
 			
 				
 		}
@@ -113,6 +127,7 @@ namespace CoureWork
 		{
 			frmRegister frmRegister = new frmRegister();
 			frmRegister.Show();
+			this.Hide();
 			
 			
 			
@@ -120,7 +135,21 @@ namespace CoureWork
 
 		public void UpdateUserName(string userName)
 		{
-			userNameLabel.Text = userName;
+			balanceLabel.Text = userName;
+		}
+
+		private void walletButton_Click(object sender, EventArgs e)
+		{
+			WalletForm walletForm = new WalletForm();
+			walletForm.Show();
+			this.Hide();
+		}
+
+		private void cartButton_Click(object sender, EventArgs e)
+		{
+			Dashboard dashboard = new Dashboard();
+			dashboard.Show();
+			this.Hide();
 		}
 	}
 }

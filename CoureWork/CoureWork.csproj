@@ -56,11 +56,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardWallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardWallet.Designer.cs">
+      <DependentUpon>CardWallet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categories\LaptopsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Categories\LaptopsForm.Designer.cs">
       <DependentUpon>LaptopsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\SmartwatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\SmartwatchForm.Designer.cs">
+      <DependentUpon>SmartwatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\TVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\TVForm.Designer.cs">
+      <DependentUpon>TVForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Context\Account.cs" />
     <Compile Include="Context\ApplicationDbContext.cs" />
@@ -78,6 +96,9 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Elements\MyLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Elements\PlaceholderTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -117,6 +138,12 @@
     <Compile Include="Categories\PhonesForm.Designer.cs">
       <DependentUpon>PhonesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhoneWallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneWallet.Designer.cs">
+      <DependentUpon>PhoneWallet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Elements\RoundedButton.cs">
@@ -128,8 +155,23 @@
     <Compile Include="RegForm.Designer.cs">
       <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WalletForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WalletForm.Designer.cs">
+      <DependentUpon>WalletForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CardWallet.resx">
+      <DependentUpon>CardWallet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categories\LaptopsForm.resx">
       <DependentUpon>LaptopsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\SmartwatchForm.resx">
+      <DependentUpon>SmartwatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\TVForm.resx">
+      <DependentUpon>TVForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -155,6 +197,9 @@
     <EmbeddedResource Include="Categories\PhonesForm.resx">
       <DependentUpon>PhonesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PhoneWallet.resx">
+      <DependentUpon>PhoneWallet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -168,6 +213,9 @@
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WalletForm.resx">
+      <DependentUpon>WalletForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,9 +226,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\icons8-instagram-48.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EntityFramework">

@@ -24,5 +24,19 @@ namespace CoureWork.Categories
 			this.Hide();
 
 		}
+
+		private void roundButton5_Click(object sender, EventArgs e)
+		{
+			MainForm mainForm = new MainForm();
+			mainForm.Show();
+			this.Hide();
+		}
+
+		private void backButton_Click_1(object sender, EventArgs e)
+		{
+			MainForm mainForm = new MainForm();
+			mainForm.Show();
+			this.Hide();
+		}
 	}
 }

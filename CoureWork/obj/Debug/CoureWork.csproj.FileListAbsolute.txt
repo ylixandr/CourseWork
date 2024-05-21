@@ -25,3 +25,9 @@ C:\Users\User\source\repos\CoureWork\CoureWork\bin\Debug\EntityFramework.dll
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Migrations.InitialCreate.resources
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Migrations.Firstogr.resources
 C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Migrations.AddingToWallet.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Categories.LaptopsForm.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.CardWallet.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Categories.SmartwatchForm.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.WalletForm.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.PhoneWallet.resources
+C:\Users\User\source\repos\CoureWork\CoureWork\obj\Debug\CoureWork.Categories.TVForm.resources

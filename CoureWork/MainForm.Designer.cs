@@ -37,7 +37,7 @@
 			this.eShopLabel = new System.Windows.Forms.Label();
 			this.cartPicture = new System.Windows.Forms.PictureBox();
 			this.userPicture = new System.Windows.Forms.PictureBox();
-			this.userNameLabel = new System.Windows.Forms.Label();
+			this.balanceLabel = new System.Windows.Forms.Label();
 			this.contactLabel = new System.Windows.Forms.Label();
 			this.instPicture = new System.Windows.Forms.PictureBox();
 			this.vkPicture = new System.Windows.Forms.PictureBox();
@@ -111,6 +111,7 @@
 			this.cartButton.Size = new System.Drawing.Size(162, 56);
 			this.cartButton.TabIndex = 1;
 			this.cartButton.Text = "Корзина";
+			this.cartButton.Click += new System.EventHandler(this.cartButton_Click);
 			// 
 			// walletButton
 			// 
@@ -130,6 +131,7 @@
 			this.walletButton.Size = new System.Drawing.Size(162, 57);
 			this.walletButton.TabIndex = 1;
 			this.walletButton.Text = "Кошелек";
+			this.walletButton.Click += new System.EventHandler(this.walletButton_Click);
 			// 
 			// categoryButton
 			// 
@@ -182,14 +184,14 @@
 			this.userPicture.TabIndex = 1;
 			this.userPicture.TabStop = false;
 			// 
-			// userNameLabel
+			// balanceLabel
 			// 
-			this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.userNameLabel.Location = new System.Drawing.Point(860, 11);
-			this.userNameLabel.Name = "userNameLabel";
-			this.userNameLabel.Size = new System.Drawing.Size(132, 49);
-			this.userNameLabel.TabIndex = 2;
-			this.userNameLabel.Text = "ylixandr";
+			this.balanceLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.balanceLabel.Location = new System.Drawing.Point(860, 11);
+			this.balanceLabel.Name = "balanceLabel";
+			this.balanceLabel.Size = new System.Drawing.Size(132, 49);
+			this.balanceLabel.TabIndex = 2;
+			this.balanceLabel.Text = "ylixandr";
 			// 
 			// contactLabel
 			// 
@@ -283,10 +285,12 @@
 			this.Controls.Add(this.myLine3);
 			this.Controls.Add(this.myLine2);
 			this.Controls.Add(this.myLine1);
-			this.Controls.Add(this.userNameLabel);
+			this.Controls.Add(this.balanceLabel);
 			this.Controls.Add(this.userPicture);
 			this.Controls.Add(this.leftPanel);
 			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "MainForm";
 			this.leftPanel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.cartPicture)).EndInit();
@@ -308,7 +312,7 @@
 		private RoundButton walletButton;
 		private RoundButton categoryButton;
 		private System.Windows.Forms.PictureBox userPicture;
-		private System.Windows.Forms.Label userNameLabel;
+		private System.Windows.Forms.Label balanceLabel;
 		private RoundButton userButton;
 		private Elements.MyLine myLine1;
 		private Elements.MyLine myLine3;

@@ -142,6 +142,7 @@
 			this.laptopButton.Size = new System.Drawing.Size(306, 40);
 			this.laptopButton.TabIndex = 2;
 			this.laptopButton.Text = "Подробнее→";
+			this.laptopButton.Click += new System.EventHandler(this.laptopButton_Click);
 			// 
 			// panel4
 			// 
@@ -190,6 +191,7 @@
 			this.watchButton.Size = new System.Drawing.Size(302, 40);
 			this.watchButton.TabIndex = 3;
 			this.watchButton.Text = "Подробнее→";
+			this.watchButton.Click += new System.EventHandler(this.watchButton_Click);
 			// 
 			// tvPanel
 			// 
@@ -231,6 +233,7 @@
 			this.tvButton.Size = new System.Drawing.Size(302, 40);
 			this.tvButton.TabIndex = 2;
 			this.tvButton.Text = "Подробнее→";
+			this.tvButton.Click += new System.EventHandler(this.tvButton_Click);
 			// 
 			// panelCategory
 			// 
