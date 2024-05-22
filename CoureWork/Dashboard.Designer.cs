@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -35,16 +36,31 @@
 			this.walletButton = new System.Windows.Forms.Button();
 			this.homeButton = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.label4 = new System.Windows.Forms.Label();
 			this.balanceLabel = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.userNameLabel = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dataGridViewCart = new System.Windows.Forms.DataGridView();
+			this.cartBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.electronicStoreDataSet = new CoureWork.ElectronicStoreDataSet();
+			this.cartTableAdapter = new CoureWork.ElectronicStoreDataSetTableAdapters.CartTableAdapter();
+			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.accountIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.categoryIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.purchaseDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.productPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.productTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ClearButton = new CoureWork.RoundButton();
+			this.orderButton = new CoureWork.RoundButton();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewCart)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.cartBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.electronicStoreDataSet)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -68,7 +84,7 @@
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Margin = new System.Windows.Forms.Padding(4);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(248, 710);
+			this.panel1.Size = new System.Drawing.Size(248, 747);
 			this.panel1.TabIndex = 1;
 			// 
 			// label3
@@ -129,6 +145,18 @@
 			this.panel2.Size = new System.Drawing.Size(248, 177);
 			this.panel2.TabIndex = 2;
 			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+			this.label4.Location = new System.Drawing.Point(13, 111);
+			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(62, 17);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Имя";
+			// 
 			// balanceLabel
 			// 
 			this.balanceLabel.AutoSize = true;
@@ -177,35 +205,156 @@
 			this.userNameLabel.Text = "Some user ";
 			this.userNameLabel.Click += new System.EventHandler(this.label2_Click);
 			// 
-			// label4
+			// dataGridViewCart
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-			this.label4.Location = new System.Drawing.Point(13, 111);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(62, 17);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Имя";
+			this.dataGridViewCart.AutoGenerateColumns = false;
+			this.dataGridViewCart.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+			this.dataGridViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridViewCart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.accountIdDataGridViewTextBoxColumn,
+            this.productIdDataGridViewTextBoxColumn,
+            this.categoryIdDataGridViewTextBoxColumn,
+            this.purchaseDateDataGridViewTextBoxColumn,
+            this.productPriceDataGridViewTextBoxColumn,
+            this.productTypeDataGridViewTextBoxColumn,
+            this.productNameDataGridViewTextBoxColumn});
+			this.dataGridViewCart.DataSource = this.cartBindingSource;
+			this.dataGridViewCart.Location = new System.Drawing.Point(245, 3);
+			this.dataGridViewCart.Name = "dataGridViewCart";
+			this.dataGridViewCart.RowHeadersWidth = 52;
+			this.dataGridViewCart.RowTemplate.Height = 24;
+			this.dataGridViewCart.Size = new System.Drawing.Size(1331, 686);
+			this.dataGridViewCart.TabIndex = 3;
 			// 
-			// dataGridView1
+			// cartBindingSource
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(435, 135);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(578, 357);
-			this.dataGridView1.TabIndex = 3;
+			this.cartBindingSource.DataMember = "Cart";
+			this.cartBindingSource.DataSource = this.electronicStoreDataSet;
+			// 
+			// electronicStoreDataSet
+			// 
+			this.electronicStoreDataSet.DataSetName = "ElectronicStoreDataSet";
+			this.electronicStoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
+			// cartTableAdapter
+			// 
+			this.cartTableAdapter.ClearBeforeFill = true;
+			// 
+			// idDataGridViewTextBoxColumn
+			// 
+			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+			this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+			this.idDataGridViewTextBoxColumn.ReadOnly = true;
+			this.idDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// accountIdDataGridViewTextBoxColumn
+			// 
+			this.accountIdDataGridViewTextBoxColumn.DataPropertyName = "AccountId";
+			this.accountIdDataGridViewTextBoxColumn.HeaderText = "AccountId";
+			this.accountIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.accountIdDataGridViewTextBoxColumn.Name = "accountIdDataGridViewTextBoxColumn";
+			this.accountIdDataGridViewTextBoxColumn.Width = 80;
+			// 
+			// productIdDataGridViewTextBoxColumn
+			// 
+			this.productIdDataGridViewTextBoxColumn.DataPropertyName = "ProductId";
+			this.productIdDataGridViewTextBoxColumn.HeaderText = "ProductId";
+			this.productIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
+			this.productIdDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// categoryIdDataGridViewTextBoxColumn
+			// 
+			this.categoryIdDataGridViewTextBoxColumn.DataPropertyName = "CategoryId";
+			this.categoryIdDataGridViewTextBoxColumn.HeaderText = "CategoryId";
+			this.categoryIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.categoryIdDataGridViewTextBoxColumn.Name = "categoryIdDataGridViewTextBoxColumn";
+			this.categoryIdDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// purchaseDateDataGridViewTextBoxColumn
+			// 
+			this.purchaseDateDataGridViewTextBoxColumn.DataPropertyName = "PurchaseDate";
+			this.purchaseDateDataGridViewTextBoxColumn.HeaderText = "PurchaseDate";
+			this.purchaseDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.purchaseDateDataGridViewTextBoxColumn.Name = "purchaseDateDataGridViewTextBoxColumn";
+			this.purchaseDateDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// productPriceDataGridViewTextBoxColumn
+			// 
+			this.productPriceDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
+			this.productPriceDataGridViewTextBoxColumn.HeaderText = "ProductPrice";
+			this.productPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.productPriceDataGridViewTextBoxColumn.Name = "productPriceDataGridViewTextBoxColumn";
+			this.productPriceDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// productTypeDataGridViewTextBoxColumn
+			// 
+			this.productTypeDataGridViewTextBoxColumn.DataPropertyName = "ProductType";
+			this.productTypeDataGridViewTextBoxColumn.HeaderText = "ProductType";
+			this.productTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.productTypeDataGridViewTextBoxColumn.Name = "productTypeDataGridViewTextBoxColumn";
+			this.productTypeDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// productNameDataGridViewTextBoxColumn
+			// 
+			this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+			this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
+			this.productNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+			this.productNameDataGridViewTextBoxColumn.Width = 200;
+			// 
+			// ClearButton
+			// 
+			this.ClearButton.BackColor = System.Drawing.Color.Gainsboro;
+			this.ClearButton.BackColor2 = System.Drawing.Color.Silver;
+			this.ClearButton.ButtonBorderColor = System.Drawing.Color.Black;
+			this.ClearButton.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.ClearButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.ClearButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.ClearButton.ButtonPressedColor = System.Drawing.Color.Red;
+			this.ClearButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.ClearButton.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.ClearButton.ButtonRoundRadius = 30;
+			this.ClearButton.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ClearButton.Location = new System.Drawing.Point(1284, 695);
+			this.ClearButton.Name = "ClearButton";
+			this.ClearButton.Size = new System.Drawing.Size(190, 51);
+			this.ClearButton.TabIndex = 5;
+			this.ClearButton.Text = "Очистка корзины";
+			this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+			// 
+			// orderButton
+			// 
+			this.orderButton.BackColor = System.Drawing.Color.Lime;
+			this.orderButton.BackColor2 = System.Drawing.Color.Chartreuse;
+			this.orderButton.ButtonBorderColor = System.Drawing.Color.Black;
+			this.orderButton.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.orderButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.orderButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.orderButton.ButtonPressedColor = System.Drawing.Color.Red;
+			this.orderButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.orderButton.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.orderButton.ButtonRoundRadius = 30;
+			this.orderButton.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.orderButton.Location = new System.Drawing.Point(255, 695);
+			this.orderButton.Name = "orderButton";
+			this.orderButton.Size = new System.Drawing.Size(182, 51);
+			this.orderButton.TabIndex = 4;
+			this.orderButton.Text = "Заказать все";
+			this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
 			// 
 			// Dashboard
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(1268, 710);
-			this.Controls.Add(this.dataGridView1);
+			this.ClientSize = new System.Drawing.Size(1786, 747);
+			this.Controls.Add(this.ClearButton);
+			this.Controls.Add(this.orderButton);
+			this.Controls.Add(this.dataGridViewCart);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -220,7 +369,9 @@
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewCart)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.cartBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.electronicStoreDataSet)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -238,6 +389,19 @@
 		private System.Windows.Forms.Label balanceLabel;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dataGridViewCart;
+		private CoureWork.ElectronicStoreDataSet electronicStoreDataSet;
+		private System.Windows.Forms.BindingSource cartBindingSource;
+		private CoureWork.ElectronicStoreDataSetTableAdapters.CartTableAdapter cartTableAdapter;
+		private CoureWork.RoundButton orderButton;
+		private CoureWork.RoundButton ClearButton;
+		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn accountIdDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn productIdDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn categoryIdDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn purchaseDateDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn productPriceDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn productTypeDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
 	}
 }

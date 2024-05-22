@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using System.Data.SqlClient;
 
 namespace CoureWork.Context
 {
@@ -34,5 +35,7 @@ namespace CoureWork.Context
 				.WithRequired(w => w.Account);
 				
 		}
+
+		
 	}
 }

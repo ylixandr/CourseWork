@@ -35,27 +35,27 @@
 			this.backButton = new CoureWork.RoundButton();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.listBox4 = new System.Windows.Forms.ListBox();
-			this.label5 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
 			this.roundButton4 = new CoureWork.RoundButton();
-			this.label6 = new System.Windows.Forms.Label();
+			this.pricelabel3 = new System.Windows.Forms.Label();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.listBox3 = new System.Windows.Forms.ListBox();
-			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.roundButton3 = new CoureWork.RoundButton();
-			this.label4 = new System.Windows.Forms.Label();
+			this.pricelabel2 = new System.Windows.Forms.Label();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.listBox2 = new System.Windows.Forms.ListBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.roundButton2 = new CoureWork.RoundButton();
-			this.label2 = new System.Windows.Forms.Label();
+			this.pricelabel1 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.listBox1 = new System.Windows.Forms.ListBox();
-			this.iphoneNameLabel = new System.Windows.Forms.Label();
+			this.label0 = new System.Windows.Forms.Label();
 			this.roundButton1 = new CoureWork.RoundButton();
-			this.priceLabelIphone = new System.Windows.Forms.Label();
+			this.pricelabel0 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.panel6 = new System.Windows.Forms.Panel();
@@ -64,25 +64,25 @@
 			this.listBox5 = new System.Windows.Forms.ListBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.roundButton6 = new CoureWork.RoundButton();
-			this.label8 = new System.Windows.Forms.Label();
+			this.pricelabel7 = new System.Windows.Forms.Label();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.listBox6 = new System.Windows.Forms.ListBox();
-			this.label9 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
 			this.roundButton7 = new CoureWork.RoundButton();
-			this.label10 = new System.Windows.Forms.Label();
+			this.pricelabel6 = new System.Windows.Forms.Label();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.listBox7 = new System.Windows.Forms.ListBox();
-			this.label11 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
 			this.roundButton8 = new CoureWork.RoundButton();
-			this.label12 = new System.Windows.Forms.Label();
+			this.pricelabel5 = new System.Windows.Forms.Label();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.listBox8 = new System.Windows.Forms.ListBox();
-			this.label13 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
 			this.roundButton9 = new CoureWork.RoundButton();
-			this.label14 = new System.Windows.Forms.Label();
+			this.pricelabel4 = new System.Windows.Forms.Label();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
@@ -165,9 +165,9 @@
 			// panel5
 			// 
 			this.panel5.Controls.Add(this.listBox4);
-			this.panel5.Controls.Add(this.label5);
+			this.panel5.Controls.Add(this.label3);
 			this.panel5.Controls.Add(this.roundButton4);
-			this.panel5.Controls.Add(this.label6);
+			this.panel5.Controls.Add(this.pricelabel3);
 			this.panel5.Controls.Add(this.pictureBox4);
 			this.panel5.Location = new System.Drawing.Point(3, 519);
 			this.panel5.Name = "panel5";
@@ -192,15 +192,15 @@
 			this.listBox4.Size = new System.Drawing.Size(645, 96);
 			this.listBox4.TabIndex = 8;
 			// 
-			// label5
+			// label3
 			// 
-			this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(174, 12);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(636, 61);
-			this.label5.TabIndex = 4;
-			this.label5.Text = " LG 55QNED816RA";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(174, 12);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(636, 61);
+			this.label3.TabIndex = 4;
+			this.label3.Text = " LG 55QNED816RA";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton4
 			// 
@@ -220,15 +220,16 @@
 			this.roundButton4.Size = new System.Drawing.Size(139, 61);
 			this.roundButton4.TabIndex = 2;
 			this.roundButton4.Text = "КУПИТЬ";
+			this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
 			// 
-			// label6
+			// pricelabel3
 			// 
-			this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label6.Location = new System.Drawing.Point(834, 48);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(127, 37);
-			this.label6.TabIndex = 1;
-			this.label6.Text = "3799,00";
+			this.pricelabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel3.Location = new System.Drawing.Point(834, 48);
+			this.pricelabel3.Name = "pricelabel3";
+			this.pricelabel3.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel3.TabIndex = 1;
+			this.pricelabel3.Text = "3799,00";
 			// 
 			// pictureBox4
 			// 
@@ -243,9 +244,9 @@
 			// panel4
 			// 
 			this.panel4.Controls.Add(this.listBox3);
-			this.panel4.Controls.Add(this.label3);
+			this.panel4.Controls.Add(this.label2);
 			this.panel4.Controls.Add(this.roundButton3);
-			this.panel4.Controls.Add(this.label4);
+			this.panel4.Controls.Add(this.pricelabel2);
 			this.panel4.Controls.Add(this.pictureBox3);
 			this.panel4.Location = new System.Drawing.Point(3, 339);
 			this.panel4.Name = "panel4";
@@ -270,15 +271,15 @@
 			this.listBox3.Size = new System.Drawing.Size(645, 96);
 			this.listBox3.TabIndex = 7;
 			// 
-			// label3
+			// label2
 			// 
-			this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(174, 12);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(636, 61);
-			this.label3.TabIndex = 4;
-			this.label3.Text = "LG 50UR81009LK";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(174, 12);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(636, 61);
+			this.label2.TabIndex = 4;
+			this.label2.Text = "LG 50UR81009LK";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton3
 			// 
@@ -298,15 +299,16 @@
 			this.roundButton3.Size = new System.Drawing.Size(139, 61);
 			this.roundButton3.TabIndex = 2;
 			this.roundButton3.Text = "КУПИТЬ";
+			this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
 			// 
-			// label4
+			// pricelabel2
 			// 
-			this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label4.Location = new System.Drawing.Point(834, 48);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(127, 37);
-			this.label4.TabIndex = 1;
-			this.label4.Text = "1799";
+			this.pricelabel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel2.Location = new System.Drawing.Point(834, 48);
+			this.pricelabel2.Name = "pricelabel2";
+			this.pricelabel2.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel2.TabIndex = 1;
+			this.pricelabel2.Text = "1799,00";
 			// 
 			// pictureBox3
 			// 
@@ -323,7 +325,7 @@
 			this.panel3.Controls.Add(this.listBox2);
 			this.panel3.Controls.Add(this.label1);
 			this.panel3.Controls.Add(this.roundButton2);
-			this.panel3.Controls.Add(this.label2);
+			this.panel3.Controls.Add(this.pricelabel1);
 			this.panel3.Controls.Add(this.pictureBox2);
 			this.panel3.Location = new System.Drawing.Point(3, 159);
 			this.panel3.Name = "panel3";
@@ -375,15 +377,16 @@
 			this.roundButton2.Size = new System.Drawing.Size(139, 61);
 			this.roundButton2.TabIndex = 2;
 			this.roundButton2.Text = "КУПИТЬ";
+			this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
 			// 
-			// label2
+			// pricelabel1
 			// 
-			this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label2.Location = new System.Drawing.Point(834, 48);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(127, 37);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "1599,00";
+			this.pricelabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel1.Location = new System.Drawing.Point(834, 48);
+			this.pricelabel1.Name = "pricelabel1";
+			this.pricelabel1.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel1.TabIndex = 1;
+			this.pricelabel1.Text = "1599,00";
 			// 
 			// pictureBox2
 			// 
@@ -398,9 +401,9 @@
 			// panel2
 			// 
 			this.panel2.Controls.Add(this.listBox1);
-			this.panel2.Controls.Add(this.iphoneNameLabel);
+			this.panel2.Controls.Add(this.label0);
 			this.panel2.Controls.Add(this.roundButton1);
-			this.panel2.Controls.Add(this.priceLabelIphone);
+			this.panel2.Controls.Add(this.pricelabel0);
 			this.panel2.Controls.Add(this.pictureBox1);
 			this.panel2.Location = new System.Drawing.Point(0, 0);
 			this.panel2.Name = "panel2";
@@ -425,15 +428,15 @@
 			this.listBox1.Size = new System.Drawing.Size(645, 96);
 			this.listBox1.TabIndex = 5;
 			// 
-			// iphoneNameLabel
+			// label0
 			// 
-			this.iphoneNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.iphoneNameLabel.Location = new System.Drawing.Point(174, 12);
-			this.iphoneNameLabel.Name = "iphoneNameLabel";
-			this.iphoneNameLabel.Size = new System.Drawing.Size(636, 61);
-			this.iphoneNameLabel.TabIndex = 4;
-			this.iphoneNameLabel.Text = "LG 65NANO766QA";
-			this.iphoneNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label0.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label0.Location = new System.Drawing.Point(174, 12);
+			this.label0.Name = "label0";
+			this.label0.Size = new System.Drawing.Size(636, 61);
+			this.label0.TabIndex = 4;
+			this.label0.Text = "LG 65NANO766QA";
+			this.label0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton1
 			// 
@@ -453,15 +456,16 @@
 			this.roundButton1.Size = new System.Drawing.Size(139, 61);
 			this.roundButton1.TabIndex = 2;
 			this.roundButton1.Text = "КУПИТЬ";
+			this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
 			// 
-			// priceLabelIphone
+			// pricelabel0
 			// 
-			this.priceLabelIphone.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.priceLabelIphone.Location = new System.Drawing.Point(837, 49);
-			this.priceLabelIphone.Name = "priceLabelIphone";
-			this.priceLabelIphone.Size = new System.Drawing.Size(127, 37);
-			this.priceLabelIphone.TabIndex = 1;
-			this.priceLabelIphone.Text = "2682,00";
+			this.pricelabel0.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel0.Location = new System.Drawing.Point(837, 49);
+			this.pricelabel0.Name = "pricelabel0";
+			this.pricelabel0.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel0.TabIndex = 1;
+			this.pricelabel0.Text = "2682,00";
 			// 
 			// pictureBox1
 			// 
@@ -522,7 +526,7 @@
 			this.panel7.Controls.Add(this.listBox5);
 			this.panel7.Controls.Add(this.label7);
 			this.panel7.Controls.Add(this.roundButton6);
-			this.panel7.Controls.Add(this.label8);
+			this.panel7.Controls.Add(this.pricelabel7);
 			this.panel7.Controls.Add(this.pictureBox5);
 			this.panel7.Location = new System.Drawing.Point(3, 519);
 			this.panel7.Name = "panel7";
@@ -575,15 +579,16 @@
 			this.roundButton6.Size = new System.Drawing.Size(139, 61);
 			this.roundButton6.TabIndex = 2;
 			this.roundButton6.Text = "КУПИТЬ";
+			this.roundButton6.Click += new System.EventHandler(this.roundButton6_Click);
 			// 
-			// label8
+			// pricelabel7
 			// 
-			this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label8.Location = new System.Drawing.Point(834, 48);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(127, 37);
-			this.label8.TabIndex = 1;
-			this.label8.Text = "1199,00";
+			this.pricelabel7.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel7.Location = new System.Drawing.Point(834, 48);
+			this.pricelabel7.Name = "pricelabel7";
+			this.pricelabel7.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel7.TabIndex = 1;
+			this.pricelabel7.Text = "1199,00";
 			// 
 			// pictureBox5
 			// 
@@ -598,9 +603,9 @@
 			// panel8
 			// 
 			this.panel8.Controls.Add(this.listBox6);
-			this.panel8.Controls.Add(this.label9);
+			this.panel8.Controls.Add(this.label6);
 			this.panel8.Controls.Add(this.roundButton7);
-			this.panel8.Controls.Add(this.label10);
+			this.panel8.Controls.Add(this.pricelabel6);
 			this.panel8.Controls.Add(this.pictureBox6);
 			this.panel8.Location = new System.Drawing.Point(3, 339);
 			this.panel8.Name = "panel8";
@@ -625,15 +630,15 @@
 			this.listBox6.Size = new System.Drawing.Size(645, 96);
 			this.listBox6.TabIndex = 7;
 			// 
-			// label9
+			// label6
 			// 
-			this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(174, 12);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(636, 61);
-			this.label9.TabIndex = 4;
-			this.label9.Text = "LG OLED48C3RLA ";
-			this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(174, 12);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(636, 61);
+			this.label6.TabIndex = 4;
+			this.label6.Text = "LG OLED48C3RLA ";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton7
 			// 
@@ -653,15 +658,16 @@
 			this.roundButton7.Size = new System.Drawing.Size(139, 61);
 			this.roundButton7.TabIndex = 2;
 			this.roundButton7.Text = "КУПИТЬ";
+			this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
 			// 
-			// label10
+			// pricelabel6
 			// 
-			this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label10.Location = new System.Drawing.Point(834, 48);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(127, 37);
-			this.label10.TabIndex = 1;
-			this.label10.Text = "4199,00";
+			this.pricelabel6.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel6.Location = new System.Drawing.Point(834, 48);
+			this.pricelabel6.Name = "pricelabel6";
+			this.pricelabel6.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel6.TabIndex = 1;
+			this.pricelabel6.Text = "4199,00";
 			// 
 			// pictureBox6
 			// 
@@ -676,9 +682,9 @@
 			// panel9
 			// 
 			this.panel9.Controls.Add(this.listBox7);
-			this.panel9.Controls.Add(this.label11);
+			this.panel9.Controls.Add(this.label5);
 			this.panel9.Controls.Add(this.roundButton8);
-			this.panel9.Controls.Add(this.label12);
+			this.panel9.Controls.Add(this.pricelabel5);
 			this.panel9.Controls.Add(this.pictureBox7);
 			this.panel9.Location = new System.Drawing.Point(3, 159);
 			this.panel9.Name = "panel9";
@@ -703,15 +709,15 @@
 			this.listBox7.Size = new System.Drawing.Size(645, 96);
 			this.listBox7.TabIndex = 6;
 			// 
-			// label11
+			// label5
 			// 
-			this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(174, 12);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(636, 61);
-			this.label11.TabIndex = 4;
-			this.label11.Text = "TCL 55P635";
-			this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(174, 12);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(636, 61);
+			this.label5.TabIndex = 4;
+			this.label5.Text = "TCL 55P635";
+			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton8
 			// 
@@ -731,15 +737,16 @@
 			this.roundButton8.Size = new System.Drawing.Size(139, 61);
 			this.roundButton8.TabIndex = 2;
 			this.roundButton8.Text = "КУПИТЬ";
+			this.roundButton8.Click += new System.EventHandler(this.roundButton8_Click);
 			// 
-			// label12
+			// pricelabel5
 			// 
-			this.label12.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label12.Location = new System.Drawing.Point(834, 48);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(127, 37);
-			this.label12.TabIndex = 1;
-			this.label12.Text = "1549,00";
+			this.pricelabel5.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel5.Location = new System.Drawing.Point(834, 48);
+			this.pricelabel5.Name = "pricelabel5";
+			this.pricelabel5.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel5.TabIndex = 1;
+			this.pricelabel5.Text = "1549,00";
 			// 
 			// pictureBox7
 			// 
@@ -754,9 +761,9 @@
 			// panel10
 			// 
 			this.panel10.Controls.Add(this.listBox8);
-			this.panel10.Controls.Add(this.label13);
+			this.panel10.Controls.Add(this.label4);
 			this.panel10.Controls.Add(this.roundButton9);
-			this.panel10.Controls.Add(this.label14);
+			this.panel10.Controls.Add(this.pricelabel4);
 			this.panel10.Controls.Add(this.pictureBox8);
 			this.panel10.Location = new System.Drawing.Point(0, 0);
 			this.panel10.Name = "panel10";
@@ -780,15 +787,15 @@
 			this.listBox8.Size = new System.Drawing.Size(645, 96);
 			this.listBox8.TabIndex = 5;
 			// 
-			// label13
+			// label4
 			// 
-			this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(174, 12);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(636, 61);
-			this.label13.TabIndex = 4;
-			this.label13.Text = "TCL 55QLED870";
-			this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(174, 12);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(636, 61);
+			this.label4.TabIndex = 4;
+			this.label4.Text = "TCL 55QLED870";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton9
 			// 
@@ -808,15 +815,16 @@
 			this.roundButton9.Size = new System.Drawing.Size(139, 61);
 			this.roundButton9.TabIndex = 2;
 			this.roundButton9.Text = "КУПИТЬ";
+			this.roundButton9.Click += new System.EventHandler(this.roundButton9_Click);
 			// 
-			// label14
+			// pricelabel4
 			// 
-			this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label14.Location = new System.Drawing.Point(837, 49);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(127, 37);
-			this.label14.TabIndex = 1;
-			this.label14.Text = "2799,00";
+			this.pricelabel4.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel4.Location = new System.Drawing.Point(837, 49);
+			this.pricelabel4.Name = "pricelabel4";
+			this.pricelabel4.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel4.TabIndex = 1;
+			this.pricelabel4.Text = "2799,00";
 			// 
 			// pictureBox8
 			// 
@@ -869,27 +877,27 @@
 		private RoundButton backButton;
 		private System.Windows.Forms.Panel panel5;
 		private System.Windows.Forms.ListBox listBox4;
-		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label3;
 		private RoundButton roundButton4;
-		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label pricelabel3;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.ListBox listBox3;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label2;
 		private RoundButton roundButton3;
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label pricelabel2;
 		private System.Windows.Forms.PictureBox pictureBox3;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.ListBox listBox2;
 		private System.Windows.Forms.Label label1;
 		private RoundButton roundButton2;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label pricelabel1;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.ListBox listBox1;
-		private System.Windows.Forms.Label iphoneNameLabel;
+		private System.Windows.Forms.Label label0;
 		private RoundButton roundButton1;
-		private System.Windows.Forms.Label priceLabelIphone;
+		private System.Windows.Forms.Label pricelabel0;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.Panel panel6;
@@ -898,25 +906,25 @@
 		private System.Windows.Forms.ListBox listBox5;
 		private System.Windows.Forms.Label label7;
 		private RoundButton roundButton6;
-		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label pricelabel7;
 		private System.Windows.Forms.PictureBox pictureBox5;
 		private System.Windows.Forms.Panel panel8;
 		private System.Windows.Forms.ListBox listBox6;
-		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label label6;
 		private RoundButton roundButton7;
-		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Label pricelabel6;
 		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.Panel panel9;
 		private System.Windows.Forms.ListBox listBox7;
-		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Label label5;
 		private RoundButton roundButton8;
-		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.Label pricelabel5;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.Panel panel10;
 		private System.Windows.Forms.ListBox listBox8;
-		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.Label label4;
 		private RoundButton roundButton9;
-		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.Label pricelabel4;
 		private System.Windows.Forms.PictureBox pictureBox8;
 	}
 }

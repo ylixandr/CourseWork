@@ -83,6 +83,7 @@
     <Compile Include="Context\Account.cs" />
     <Compile Include="Context\ApplicationDbContext.cs" />
     <Compile Include="Context\Cart.cs" />
+    <Compile Include="Context\CartDetail.cs" />
     <Compile Include="Context\Category.cs" />
     <Compile Include="Context\Laptop.cs" />
     <Compile Include="Context\Smartphone.cs" />
@@ -94,6 +95,11 @@
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicStoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ElectronicStoreDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Elements\MyLine.cs">
       <SubType>Component</SubType>
@@ -130,6 +136,10 @@
     <Compile Include="Migrations\202405200545166_AddingToWallet.cs" />
     <Compile Include="Migrations\202405200545166_AddingToWallet.Designer.cs">
       <DependentUpon>202405200545166_AddingToWallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405211320149_Delete_Quantity.cs" />
+    <Compile Include="Migrations\202405211320149_Delete_Quantity.Designer.cs">
+      <DependentUpon>202405211320149_Delete_Quantity.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Categories\PhonesForm.cs">
@@ -197,6 +207,9 @@
     <EmbeddedResource Include="Categories\PhonesForm.resx">
       <DependentUpon>PhonesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405211320149_Delete_Quantity.resx">
+      <DependentUpon>202405211320149_Delete_Quantity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhoneWallet.resx">
       <DependentUpon>PhoneWallet.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +230,17 @@
       <DependentUpon>WalletForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="ElectronicStoreDataSet.xsc">
+      <DependentUpon>ElectronicStoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ElectronicStoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ElectronicStoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ElectronicStoreDataSet.xss">
+      <DependentUpon>ElectronicStoreDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

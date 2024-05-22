@@ -53,9 +53,9 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.listBox1 = new System.Windows.Forms.ListBox();
-			this.iphoneNameLabel = new System.Windows.Forms.Label();
+			this.label0 = new System.Windows.Forms.Label();
 			this.roundButton1 = new CoureWork.RoundButton();
-			this.priceLabelIphone = new System.Windows.Forms.Label();
+			this.pricelabel0 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.panel6 = new System.Windows.Forms.Panel();
@@ -220,6 +220,7 @@
 			this.roundButton4.Size = new System.Drawing.Size(139, 61);
 			this.roundButton4.TabIndex = 2;
 			this.roundButton4.Text = "КУПИТЬ";
+			this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
 			// 
 			// label6
 			// 
@@ -297,6 +298,7 @@
 			this.roundButton3.Size = new System.Drawing.Size(139, 61);
 			this.roundButton3.TabIndex = 2;
 			this.roundButton3.Text = "КУПИТЬ";
+			this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
 			// 
 			// label4
 			// 
@@ -374,6 +376,7 @@
 			this.roundButton2.Size = new System.Drawing.Size(139, 61);
 			this.roundButton2.TabIndex = 2;
 			this.roundButton2.Text = "КУПИТЬ";
+			this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
 			// 
 			// label2
 			// 
@@ -397,9 +400,9 @@
 			// panel2
 			// 
 			this.panel2.Controls.Add(this.listBox1);
-			this.panel2.Controls.Add(this.iphoneNameLabel);
+			this.panel2.Controls.Add(this.label0);
 			this.panel2.Controls.Add(this.roundButton1);
-			this.panel2.Controls.Add(this.priceLabelIphone);
+			this.panel2.Controls.Add(this.pricelabel0);
 			this.panel2.Controls.Add(this.pictureBox1);
 			this.panel2.Location = new System.Drawing.Point(0, 0);
 			this.panel2.Name = "panel2";
@@ -423,15 +426,15 @@
 			this.listBox1.Size = new System.Drawing.Size(645, 96);
 			this.listBox1.TabIndex = 5;
 			// 
-			// iphoneNameLabel
+			// label0
 			// 
-			this.iphoneNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.iphoneNameLabel.Location = new System.Drawing.Point(174, 12);
-			this.iphoneNameLabel.Name = "iphoneNameLabel";
-			this.iphoneNameLabel.Size = new System.Drawing.Size(636, 61);
-			this.iphoneNameLabel.TabIndex = 4;
-			this.iphoneNameLabel.Text = "Thunderobot 911S Core D";
-			this.iphoneNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label0.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label0.Location = new System.Drawing.Point(174, 12);
+			this.label0.Name = "label0";
+			this.label0.Size = new System.Drawing.Size(636, 61);
+			this.label0.TabIndex = 4;
+			this.label0.Text = "Thunderobot 911S Core D";
+			this.label0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// roundButton1
 			// 
@@ -451,15 +454,16 @@
 			this.roundButton1.Size = new System.Drawing.Size(139, 61);
 			this.roundButton1.TabIndex = 2;
 			this.roundButton1.Text = "КУПИТЬ";
+			this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
 			// 
-			// priceLabelIphone
+			// pricelabel0
 			// 
-			this.priceLabelIphone.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.priceLabelIphone.Location = new System.Drawing.Point(837, 49);
-			this.priceLabelIphone.Name = "priceLabelIphone";
-			this.priceLabelIphone.Size = new System.Drawing.Size(127, 37);
-			this.priceLabelIphone.TabIndex = 1;
-			this.priceLabelIphone.Text = "2893,00";
+			this.pricelabel0.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.pricelabel0.Location = new System.Drawing.Point(837, 49);
+			this.pricelabel0.Name = "pricelabel0";
+			this.pricelabel0.Size = new System.Drawing.Size(127, 37);
+			this.pricelabel0.TabIndex = 1;
+			this.pricelabel0.Text = "2893,00";
 			// 
 			// pictureBox1
 			// 
@@ -573,6 +577,7 @@
 			this.roundButton6.Size = new System.Drawing.Size(139, 61);
 			this.roundButton6.TabIndex = 2;
 			this.roundButton6.Text = "КУПИТЬ";
+			this.roundButton6.Click += new System.EventHandler(this.roundButton6_Click);
 			// 
 			// label8
 			// 
@@ -650,6 +655,7 @@
 			this.roundButton7.Size = new System.Drawing.Size(139, 61);
 			this.roundButton7.TabIndex = 2;
 			this.roundButton7.Text = "КУПИТЬ";
+			this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
 			// 
 			// label10
 			// 
@@ -727,6 +733,7 @@
 			this.roundButton8.Size = new System.Drawing.Size(139, 61);
 			this.roundButton8.TabIndex = 2;
 			this.roundButton8.Text = "КУПИТЬ";
+			this.roundButton8.Click += new System.EventHandler(this.roundButton8_Click);
 			// 
 			// label12
 			// 
@@ -804,6 +811,7 @@
 			this.roundButton9.Size = new System.Drawing.Size(139, 61);
 			this.roundButton9.TabIndex = 2;
 			this.roundButton9.Text = "КУПИТЬ";
+			this.roundButton9.Click += new System.EventHandler(this.roundButton9_Click);
 			// 
 			// label14
 			// 
@@ -883,9 +891,9 @@
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.ListBox listBox1;
-		private System.Windows.Forms.Label iphoneNameLabel;
+		private System.Windows.Forms.Label label0;
 		private RoundButton roundButton1;
-		private System.Windows.Forms.Label priceLabelIphone;
+		private System.Windows.Forms.Label pricelabel0;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.Panel panel6;
