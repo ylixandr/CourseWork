@@ -842,6 +842,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(996, 802);
 			this.Controls.Add(this.tabControl1);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "TVForm";
 			this.Text = "TVForm";
 			this.tabControl1.ResumeLayout(false);

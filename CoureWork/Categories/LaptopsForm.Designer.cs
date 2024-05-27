@@ -838,6 +838,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(987, 801);
 			this.Controls.Add(this.tabControl1);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "LaptopsForm";
 			this.Text = "LaptopsForm";
 			this.tabControl1.ResumeLayout(false);

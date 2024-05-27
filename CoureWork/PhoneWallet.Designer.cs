@@ -167,6 +167,8 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.placeholderTextBox2);
 			this.Controls.Add(this.label1);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "PhoneWallet";
 			this.Text = "PhoneWallet";
 			this.ResumeLayout(false);

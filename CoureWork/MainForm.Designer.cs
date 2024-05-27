@@ -90,7 +90,7 @@
 			this.userButton.Name = "userButton";
 			this.userButton.Size = new System.Drawing.Size(170, 55);
 			this.userButton.TabIndex = 1;
-			this.userButton.Text = "Пользователь";
+			this.userButton.Text = "Выйти";
 			this.userButton.Click += new System.EventHandler(this.userButton_Click);
 			// 
 			// cartButton

@@ -32,62 +32,62 @@
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.backButton = new CoureWork.RoundButton();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.xiamo13NameLabel = new System.Windows.Forms.Label();
 			this.listBox7 = new System.Windows.Forms.ListBox();
 			this.listBox8 = new System.Windows.Forms.ListBox();
+			this.roundButton4 = new CoureWork.RoundButton();
 			this.priceLabelXiami13PRo = new System.Windows.Forms.Label();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.samsunga32NameLabel = new System.Windows.Forms.Label();
 			this.listBox5 = new System.Windows.Forms.ListBox();
 			this.listBox6 = new System.Windows.Forms.ListBox();
+			this.roundButtonSamsungA32 = new CoureWork.RoundButton();
 			this.priceLabelSamsungA32 = new System.Windows.Forms.Label();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.huaweip70NameLabel = new System.Windows.Forms.Label();
 			this.listBox3 = new System.Windows.Forms.ListBox();
 			this.listBox4 = new System.Windows.Forms.ListBox();
+			this.roundButtonHuaweiP70 = new CoureWork.RoundButton();
 			this.priceLabelHUAWEIP70 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.iphoneNameLabel = new System.Windows.Forms.Label();
 			this.listBox2 = new System.Windows.Forms.ListBox();
 			this.listBox1 = new System.Windows.Forms.ListBox();
+			this.roundButtonIphoneX = new CoureWork.RoundButton();
 			this.priceLabelIphone = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.panel6 = new System.Windows.Forms.Panel();
+			this.roundButton5 = new CoureWork.RoundButton();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.listBox12 = new System.Windows.Forms.ListBox();
 			this.texetNameLabel = new System.Windows.Forms.Label();
+			this.roundButtonTexet = new CoureWork.RoundButton();
 			this.priceLabelTexet = new System.Windows.Forms.Label();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.listBox11 = new System.Windows.Forms.ListBox();
 			this.iphone14NameLabel = new System.Windows.Forms.Label();
+			this.roundButtonIphone14 = new CoureWork.RoundButton();
 			this.priceLabelIphone14 = new System.Windows.Forms.Label();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.listBox10 = new System.Windows.Forms.ListBox();
 			this.note13NameLabel = new System.Windows.Forms.Label();
+			this.roundButtonNote13 = new CoureWork.RoundButton();
 			this.priceLabelIphoneRedmi13 = new System.Windows.Forms.Label();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.listBox9 = new System.Windows.Forms.ListBox();
 			this.pocom6NameLabel = new System.Windows.Forms.Label();
+			this.roundButtonPocoM6 = new CoureWork.RoundButton();
 			this.priceLabelPocoM6 = new System.Windows.Forms.Label();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.backButton = new CoureWork.RoundButton();
-			this.roundButton4 = new CoureWork.RoundButton();
-			this.roundButtonSamsungA32 = new CoureWork.RoundButton();
-			this.roundButtonHuaweiP70 = new CoureWork.RoundButton();
-			this.roundButtonIphoneX = new CoureWork.RoundButton();
-			this.roundButton5 = new CoureWork.RoundButton();
-			this.roundButtonTexet = new CoureWork.RoundButton();
-			this.roundButtonIphone14 = new CoureWork.RoundButton();
-			this.roundButtonNote13 = new CoureWork.RoundButton();
-			this.roundButtonPocoM6 = new CoureWork.RoundButton();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -146,6 +146,26 @@
 			this.panel1.Size = new System.Drawing.Size(973, 767);
 			this.panel1.TabIndex = 1;
 			// 
+			// backButton
+			// 
+			this.backButton.BackColor = System.Drawing.Color.SkyBlue;
+			this.backButton.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.backButton.ButtonBorderColor = System.Drawing.Color.Black;
+			this.backButton.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.backButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.backButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.backButton.ButtonPressedColor = System.Drawing.Color.Red;
+			this.backButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.backButton.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.backButton.ButtonRoundRadius = 30;
+			this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.backButton.Location = new System.Drawing.Point(396, 709);
+			this.backButton.Name = "backButton";
+			this.backButton.Size = new System.Drawing.Size(186, 54);
+			this.backButton.TabIndex = 1;
+			this.backButton.Text = "НАЗАД";
+			this.backButton.Click += new System.EventHandler(this.backButton_Click_2);
+			// 
 			// panel5
 			// 
 			this.panel5.Controls.Add(this.xiamo13NameLabel);
@@ -200,6 +220,26 @@
 			this.listBox8.Name = "listBox8";
 			this.listBox8.Size = new System.Drawing.Size(316, 92);
 			this.listBox8.TabIndex = 3;
+			// 
+			// roundButton4
+			// 
+			this.roundButton4.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton4.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton4.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton4.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton4.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton4.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton4.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton4.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton4.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton4.ButtonRoundRadius = 30;
+			this.roundButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton4.Location = new System.Drawing.Point(822, 98);
+			this.roundButton4.Name = "roundButton4";
+			this.roundButton4.Size = new System.Drawing.Size(139, 61);
+			this.roundButton4.TabIndex = 2;
+			this.roundButton4.Text = "КУПИТЬ";
+			this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
 			// 
 			// priceLabelXiami13PRo
 			// 
@@ -275,6 +315,26 @@
 			this.listBox6.Size = new System.Drawing.Size(316, 92);
 			this.listBox6.TabIndex = 3;
 			// 
+			// roundButtonSamsungA32
+			// 
+			this.roundButtonSamsungA32.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButtonSamsungA32.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButtonSamsungA32.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButtonSamsungA32.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButtonSamsungA32.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButtonSamsungA32.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButtonSamsungA32.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButtonSamsungA32.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButtonSamsungA32.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButtonSamsungA32.ButtonRoundRadius = 30;
+			this.roundButtonSamsungA32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButtonSamsungA32.Location = new System.Drawing.Point(822, 98);
+			this.roundButtonSamsungA32.Name = "roundButtonSamsungA32";
+			this.roundButtonSamsungA32.Size = new System.Drawing.Size(139, 61);
+			this.roundButtonSamsungA32.TabIndex = 2;
+			this.roundButtonSamsungA32.Text = "КУПИТЬ";
+			this.roundButtonSamsungA32.Click += new System.EventHandler(this.roundButtonSamsungA32_Click);
+			// 
 			// priceLabelSamsungA32
 			// 
 			this.priceLabelSamsungA32.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -348,6 +408,26 @@
 			this.listBox4.Name = "listBox4";
 			this.listBox4.Size = new System.Drawing.Size(316, 92);
 			this.listBox4.TabIndex = 3;
+			// 
+			// roundButtonHuaweiP70
+			// 
+			this.roundButtonHuaweiP70.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButtonHuaweiP70.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButtonHuaweiP70.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButtonHuaweiP70.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButtonHuaweiP70.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButtonHuaweiP70.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButtonHuaweiP70.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButtonHuaweiP70.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButtonHuaweiP70.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButtonHuaweiP70.ButtonRoundRadius = 30;
+			this.roundButtonHuaweiP70.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButtonHuaweiP70.Location = new System.Drawing.Point(822, 98);
+			this.roundButtonHuaweiP70.Name = "roundButtonHuaweiP70";
+			this.roundButtonHuaweiP70.Size = new System.Drawing.Size(139, 61);
+			this.roundButtonHuaweiP70.TabIndex = 2;
+			this.roundButtonHuaweiP70.Text = "КУПИТЬ";
+			this.roundButtonHuaweiP70.Click += new System.EventHandler(this.roundButtonHuaweiP70_Click);
 			// 
 			// priceLabelHUAWEIP70
 			// 
@@ -423,6 +503,26 @@
 			this.listBox1.Size = new System.Drawing.Size(316, 92);
 			this.listBox1.TabIndex = 3;
 			// 
+			// roundButtonIphoneX
+			// 
+			this.roundButtonIphoneX.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButtonIphoneX.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButtonIphoneX.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButtonIphoneX.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButtonIphoneX.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButtonIphoneX.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButtonIphoneX.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButtonIphoneX.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButtonIphoneX.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButtonIphoneX.ButtonRoundRadius = 30;
+			this.roundButtonIphoneX.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButtonIphoneX.Location = new System.Drawing.Point(825, 92);
+			this.roundButtonIphoneX.Name = "roundButtonIphoneX";
+			this.roundButtonIphoneX.Size = new System.Drawing.Size(139, 61);
+			this.roundButtonIphoneX.TabIndex = 2;
+			this.roundButtonIphoneX.Text = "КУПИТЬ";
+			this.roundButtonIphoneX.Click += new System.EventHandler(this.roundButtonIphoneX_Click);
+			// 
 			// priceLabelIphone
 			// 
 			this.priceLabelIphone.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -466,6 +566,26 @@
 			this.panel6.Size = new System.Drawing.Size(973, 767);
 			this.panel6.TabIndex = 1;
 			// 
+			// roundButton5
+			// 
+			this.roundButton5.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton5.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton5.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton5.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton5.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton5.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton5.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton5.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton5.ButtonRoundRadius = 30;
+			this.roundButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton5.Location = new System.Drawing.Point(396, 709);
+			this.roundButton5.Name = "roundButton5";
+			this.roundButton5.Size = new System.Drawing.Size(186, 54);
+			this.roundButton5.TabIndex = 1;
+			this.roundButton5.Text = "НАЗАД";
+			this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
+			// 
 			// panel7
 			// 
 			this.panel7.Controls.Add(this.listBox12);
@@ -504,6 +624,26 @@
 			this.texetNameLabel.TabIndex = 4;
 			this.texetNameLabel.Text = "GSM Texet TM-122 (черный)";
 			this.texetNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// roundButtonTexet
+			// 
+			this.roundButtonTexet.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButtonTexet.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButtonTexet.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButtonTexet.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButtonTexet.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButtonTexet.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButtonTexet.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButtonTexet.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButtonTexet.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButtonTexet.ButtonRoundRadius = 30;
+			this.roundButtonTexet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButtonTexet.Location = new System.Drawing.Point(822, 98);
+			this.roundButtonTexet.Name = "roundButtonTexet";
+			this.roundButtonTexet.Size = new System.Drawing.Size(139, 61);
+			this.roundButtonTexet.TabIndex = 2;
+			this.roundButtonTexet.Text = "КУПИТЬ";
+			this.roundButtonTexet.Click += new System.EventHandler(this.roundButtonTexet_Click);
 			// 
 			// priceLabelTexet
 			// 
@@ -563,6 +703,26 @@
 			this.iphone14NameLabel.Text = "APPLE iPhone 14 128GB Starlight ";
 			this.iphone14NameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// roundButtonIphone14
+			// 
+			this.roundButtonIphone14.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButtonIphone14.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButtonIphone14.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButtonIphone14.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButtonIphone14.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButtonIphone14.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButtonIphone14.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButtonIphone14.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButtonIphone14.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButtonIphone14.ButtonRoundRadius = 30;
+			this.roundButtonIphone14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButtonIphone14.Location = new System.Drawing.Point(822, 98);
+			this.roundButtonIphone14.Name = "roundButtonIphone14";
+			this.roundButtonIphone14.Size = new System.Drawing.Size(139, 61);
+			this.roundButtonIphone14.TabIndex = 2;
+			this.roundButtonIphone14.Text = "КУПИТЬ";
+			this.roundButtonIphone14.Click += new System.EventHandler(this.roundButtonIphone14_Click);
+			// 
 			// priceLabelIphone14
 			// 
 			this.priceLabelIphone14.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -620,6 +780,26 @@
 			this.note13NameLabel.TabIndex = 4;
 			this.note13NameLabel.Text = "Xiaomi Redmi Note 13 8GB/256GB";
 			this.note13NameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// roundButtonNote13
+			// 
+			this.roundButtonNote13.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButtonNote13.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButtonNote13.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButtonNote13.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButtonNote13.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButtonNote13.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButtonNote13.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButtonNote13.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButtonNote13.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButtonNote13.ButtonRoundRadius = 30;
+			this.roundButtonNote13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButtonNote13.Location = new System.Drawing.Point(822, 98);
+			this.roundButtonNote13.Name = "roundButtonNote13";
+			this.roundButtonNote13.Size = new System.Drawing.Size(139, 61);
+			this.roundButtonNote13.TabIndex = 2;
+			this.roundButtonNote13.Text = "КУПИТЬ";
+			this.roundButtonNote13.Click += new System.EventHandler(this.roundButtonNote13_Click);
 			// 
 			// priceLabelIphoneRedmi13
 			// 
@@ -679,205 +859,6 @@
 			this.pocom6NameLabel.Text = "POCO M6 Pro 12GB/512GB ";
 			this.pocom6NameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// priceLabelPocoM6
-			// 
-			this.priceLabelPocoM6.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.priceLabelPocoM6.Location = new System.Drawing.Point(837, 49);
-			this.priceLabelPocoM6.Name = "priceLabelPocoM6";
-			this.priceLabelPocoM6.Size = new System.Drawing.Size(127, 37);
-			this.priceLabelPocoM6.TabIndex = 1;
-			this.priceLabelPocoM6.Text = "1089,00";
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(12, 12);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(156, 147);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox8.TabIndex = 0;
-			this.pictureBox8.TabStop = false;
-			// 
-			// backButton
-			// 
-			this.backButton.BackColor = System.Drawing.Color.SkyBlue;
-			this.backButton.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.backButton.ButtonBorderColor = System.Drawing.Color.Black;
-			this.backButton.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.backButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.backButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.backButton.ButtonPressedColor = System.Drawing.Color.Red;
-			this.backButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.backButton.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.backButton.ButtonRoundRadius = 30;
-			this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.backButton.Location = new System.Drawing.Point(396, 709);
-			this.backButton.Name = "backButton";
-			this.backButton.Size = new System.Drawing.Size(186, 54);
-			this.backButton.TabIndex = 1;
-			this.backButton.Text = "НАЗАД";
-			this.backButton.Click += new System.EventHandler(this.backButton_Click_2);
-			// 
-			// roundButton4
-			// 
-			this.roundButton4.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton4.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton4.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton4.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton4.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton4.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton4.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton4.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton4.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton4.ButtonRoundRadius = 30;
-			this.roundButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton4.Location = new System.Drawing.Point(822, 98);
-			this.roundButton4.Name = "roundButton4";
-			this.roundButton4.Size = new System.Drawing.Size(139, 61);
-			this.roundButton4.TabIndex = 2;
-			this.roundButton4.Text = "КУПИТЬ";
-			this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
-			// 
-			// roundButtonSamsungA32
-			// 
-			this.roundButtonSamsungA32.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButtonSamsungA32.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButtonSamsungA32.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButtonSamsungA32.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButtonSamsungA32.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButtonSamsungA32.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButtonSamsungA32.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButtonSamsungA32.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButtonSamsungA32.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButtonSamsungA32.ButtonRoundRadius = 30;
-			this.roundButtonSamsungA32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButtonSamsungA32.Location = new System.Drawing.Point(822, 98);
-			this.roundButtonSamsungA32.Name = "roundButtonSamsungA32";
-			this.roundButtonSamsungA32.Size = new System.Drawing.Size(139, 61);
-			this.roundButtonSamsungA32.TabIndex = 2;
-			this.roundButtonSamsungA32.Text = "КУПИТЬ";
-			this.roundButtonSamsungA32.Click += new System.EventHandler(this.roundButtonSamsungA32_Click);
-			// 
-			// roundButtonHuaweiP70
-			// 
-			this.roundButtonHuaweiP70.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButtonHuaweiP70.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButtonHuaweiP70.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButtonHuaweiP70.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButtonHuaweiP70.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButtonHuaweiP70.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButtonHuaweiP70.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButtonHuaweiP70.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButtonHuaweiP70.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButtonHuaweiP70.ButtonRoundRadius = 30;
-			this.roundButtonHuaweiP70.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButtonHuaweiP70.Location = new System.Drawing.Point(822, 98);
-			this.roundButtonHuaweiP70.Name = "roundButtonHuaweiP70";
-			this.roundButtonHuaweiP70.Size = new System.Drawing.Size(139, 61);
-			this.roundButtonHuaweiP70.TabIndex = 2;
-			this.roundButtonHuaweiP70.Text = "КУПИТЬ";
-			this.roundButtonHuaweiP70.Click += new System.EventHandler(this.roundButtonHuaweiP70_Click);
-			// 
-			// roundButtonIphoneX
-			// 
-			this.roundButtonIphoneX.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButtonIphoneX.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButtonIphoneX.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButtonIphoneX.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButtonIphoneX.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButtonIphoneX.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButtonIphoneX.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButtonIphoneX.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButtonIphoneX.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButtonIphoneX.ButtonRoundRadius = 30;
-			this.roundButtonIphoneX.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButtonIphoneX.Location = new System.Drawing.Point(825, 92);
-			this.roundButtonIphoneX.Name = "roundButtonIphoneX";
-			this.roundButtonIphoneX.Size = new System.Drawing.Size(139, 61);
-			this.roundButtonIphoneX.TabIndex = 2;
-			this.roundButtonIphoneX.Text = "КУПИТЬ";
-			this.roundButtonIphoneX.Click += new System.EventHandler(this.roundButtonIphoneX_Click);
-			// 
-			// roundButton5
-			// 
-			this.roundButton5.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton5.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton5.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton5.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton5.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton5.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton5.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton5.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton5.ButtonRoundRadius = 30;
-			this.roundButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton5.Location = new System.Drawing.Point(396, 709);
-			this.roundButton5.Name = "roundButton5";
-			this.roundButton5.Size = new System.Drawing.Size(186, 54);
-			this.roundButton5.TabIndex = 1;
-			this.roundButton5.Text = "НАЗАД";
-			this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
-			// 
-			// roundButtonTexet
-			// 
-			this.roundButtonTexet.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButtonTexet.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButtonTexet.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButtonTexet.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButtonTexet.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButtonTexet.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButtonTexet.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButtonTexet.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButtonTexet.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButtonTexet.ButtonRoundRadius = 30;
-			this.roundButtonTexet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButtonTexet.Location = new System.Drawing.Point(822, 98);
-			this.roundButtonTexet.Name = "roundButtonTexet";
-			this.roundButtonTexet.Size = new System.Drawing.Size(139, 61);
-			this.roundButtonTexet.TabIndex = 2;
-			this.roundButtonTexet.Text = "КУПИТЬ";
-			this.roundButtonTexet.Click += new System.EventHandler(this.roundButtonTexet_Click);
-			// 
-			// roundButtonIphone14
-			// 
-			this.roundButtonIphone14.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButtonIphone14.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButtonIphone14.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButtonIphone14.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButtonIphone14.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButtonIphone14.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButtonIphone14.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButtonIphone14.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButtonIphone14.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButtonIphone14.ButtonRoundRadius = 30;
-			this.roundButtonIphone14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButtonIphone14.Location = new System.Drawing.Point(822, 98);
-			this.roundButtonIphone14.Name = "roundButtonIphone14";
-			this.roundButtonIphone14.Size = new System.Drawing.Size(139, 61);
-			this.roundButtonIphone14.TabIndex = 2;
-			this.roundButtonIphone14.Text = "КУПИТЬ";
-			this.roundButtonIphone14.Click += new System.EventHandler(this.roundButtonIphone14_Click);
-			// 
-			// roundButtonNote13
-			// 
-			this.roundButtonNote13.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButtonNote13.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButtonNote13.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButtonNote13.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButtonNote13.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButtonNote13.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButtonNote13.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButtonNote13.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButtonNote13.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButtonNote13.ButtonRoundRadius = 30;
-			this.roundButtonNote13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButtonNote13.Location = new System.Drawing.Point(822, 98);
-			this.roundButtonNote13.Name = "roundButtonNote13";
-			this.roundButtonNote13.Size = new System.Drawing.Size(139, 61);
-			this.roundButtonNote13.TabIndex = 2;
-			this.roundButtonNote13.Text = "КУПИТЬ";
-			this.roundButtonNote13.Click += new System.EventHandler(this.roundButtonNote13_Click);
-			// 
 			// roundButtonPocoM6
 			// 
 			this.roundButtonPocoM6.BackColor = System.Drawing.Color.SkyBlue;
@@ -898,6 +879,25 @@
 			this.roundButtonPocoM6.Text = "КУПИТЬ";
 			this.roundButtonPocoM6.Click += new System.EventHandler(this.roundButtonPocoM6_Click);
 			// 
+			// priceLabelPocoM6
+			// 
+			this.priceLabelPocoM6.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.priceLabelPocoM6.Location = new System.Drawing.Point(837, 49);
+			this.priceLabelPocoM6.Name = "priceLabelPocoM6";
+			this.priceLabelPocoM6.Size = new System.Drawing.Size(127, 37);
+			this.priceLabelPocoM6.TabIndex = 1;
+			this.priceLabelPocoM6.Text = "1089,00";
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(12, 12);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(156, 147);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox8.TabIndex = 0;
+			this.pictureBox8.TabStop = false;
+			// 
 			// PhonesForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -905,6 +905,8 @@
 			this.BackColor = System.Drawing.Color.AliceBlue;
 			this.ClientSize = new System.Drawing.Size(987, 802);
 			this.Controls.Add(this.tabControl1);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "PhonesForm";
 			this.Text = "PhonesForm";
 			this.tabControl1.ResumeLayout(false);

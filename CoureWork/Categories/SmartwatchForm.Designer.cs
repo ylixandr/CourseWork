@@ -32,58 +32,58 @@
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.backButton = new CoureWork.RoundButton();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.listBox4 = new System.Windows.Forms.ListBox();
 			this.huaweiWatchGT3Label = new System.Windows.Forms.Label();
+			this.roundButton4 = new CoureWork.RoundButton();
 			this.priceLabelHuaweiWatchGT3 = new System.Windows.Forms.Label();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.listBox3 = new System.Windows.Forms.ListBox();
 			this.DhuaweiWatchDLabel = new System.Windows.Forms.Label();
+			this.roundButton3 = new CoureWork.RoundButton();
 			this.priceLabelHuaweiWatchD = new System.Windows.Forms.Label();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.listBox2 = new System.Windows.Forms.ListBox();
 			this.huaweiWatch4Label = new System.Windows.Forms.Label();
+			this.roundButton2 = new CoureWork.RoundButton();
 			this.priceLabelHuaweiWatch4 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.redmiWatch3NameLabel = new System.Windows.Forms.Label();
+			this.roundButton1 = new CoureWork.RoundButton();
 			this.priceLabelRedmiWatch3 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.panel6 = new System.Windows.Forms.Panel();
+			this.roundButton5 = new CoureWork.RoundButton();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.listBox5 = new System.Windows.Forms.ListBox();
 			this.HuaweiWatchFittNameLabel = new System.Windows.Forms.Label();
+			this.roundButton6 = new CoureWork.RoundButton();
 			this.priceLabelHuaweiWatchFit = new System.Windows.Forms.Label();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.listBox6 = new System.Windows.Forms.ListBox();
 			this.infinixNameLabel = new System.Windows.Forms.Label();
+			this.roundButton7 = new CoureWork.RoundButton();
 			this.priceLabelXInfinix = new System.Windows.Forms.Label();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.listBox7 = new System.Windows.Forms.ListBox();
 			this.xiamiRedmiNameLabel = new System.Windows.Forms.Label();
+			this.roundButton8 = new CoureWork.RoundButton();
 			this.priceLabelXiamiRedmi = new System.Windows.Forms.Label();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.listBox8 = new System.Windows.Forms.ListBox();
 			this.samsungGalaxyNameLabel = new System.Windows.Forms.Label();
+			this.roundButton9 = new CoureWork.RoundButton();
 			this.priceLabelSamsung = new System.Windows.Forms.Label();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.backButton = new CoureWork.RoundButton();
-			this.roundButton4 = new CoureWork.RoundButton();
-			this.roundButton3 = new CoureWork.RoundButton();
-			this.roundButton2 = new CoureWork.RoundButton();
-			this.roundButton1 = new CoureWork.RoundButton();
-			this.roundButton5 = new CoureWork.RoundButton();
-			this.roundButton6 = new CoureWork.RoundButton();
-			this.roundButton7 = new CoureWork.RoundButton();
-			this.roundButton8 = new CoureWork.RoundButton();
-			this.roundButton9 = new CoureWork.RoundButton();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -142,6 +142,26 @@
 			this.panel1.Size = new System.Drawing.Size(980, 764);
 			this.panel1.TabIndex = 3;
 			// 
+			// backButton
+			// 
+			this.backButton.BackColor = System.Drawing.Color.SkyBlue;
+			this.backButton.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.backButton.ButtonBorderColor = System.Drawing.Color.Black;
+			this.backButton.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.backButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.backButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.backButton.ButtonPressedColor = System.Drawing.Color.Red;
+			this.backButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.backButton.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.backButton.ButtonRoundRadius = 30;
+			this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.backButton.Location = new System.Drawing.Point(396, 709);
+			this.backButton.Name = "backButton";
+			this.backButton.Size = new System.Drawing.Size(186, 54);
+			this.backButton.TabIndex = 1;
+			this.backButton.Text = "НАЗАД";
+			this.backButton.Click += new System.EventHandler(this.backButton_Click_1);
+			// 
 			// panel5
 			// 
 			this.panel5.Controls.Add(this.listBox4);
@@ -181,6 +201,26 @@
 			this.huaweiWatchGT3Label.TabIndex = 4;
 			this.huaweiWatchGT3Label.Text = "Huawei Watch GT 3 Black Stainless Steel Case";
 			this.huaweiWatchGT3Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// roundButton4
+			// 
+			this.roundButton4.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton4.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton4.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton4.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton4.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton4.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton4.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton4.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton4.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton4.ButtonRoundRadius = 30;
+			this.roundButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton4.Location = new System.Drawing.Point(822, 98);
+			this.roundButton4.Name = "roundButton4";
+			this.roundButton4.Size = new System.Drawing.Size(139, 61);
+			this.roundButton4.TabIndex = 2;
+			this.roundButton4.Text = "КУПИТЬ";
+			this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
 			// 
 			// priceLabelHuaweiWatchGT3
 			// 
@@ -241,6 +281,26 @@
 			this.DhuaweiWatchDLabel.Text = "HUAWEI Watch D Case Aluminium ";
 			this.DhuaweiWatchDLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// roundButton3
+			// 
+			this.roundButton3.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton3.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton3.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton3.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton3.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton3.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton3.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton3.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton3.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton3.ButtonRoundRadius = 30;
+			this.roundButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton3.Location = new System.Drawing.Point(822, 98);
+			this.roundButton3.Name = "roundButton3";
+			this.roundButton3.Size = new System.Drawing.Size(139, 61);
+			this.roundButton3.TabIndex = 2;
+			this.roundButton3.Text = "КУПИТЬ";
+			this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
+			// 
 			// priceLabelHuaweiWatchD
 			// 
 			this.priceLabelHuaweiWatchD.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -300,6 +360,26 @@
 			this.huaweiWatch4Label.Text = "HUAWEI Watch 4 Pro Aerospace-Grade";
 			this.huaweiWatch4Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// roundButton2
+			// 
+			this.roundButton2.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton2.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton2.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton2.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton2.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton2.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton2.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton2.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton2.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton2.ButtonRoundRadius = 30;
+			this.roundButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton2.Location = new System.Drawing.Point(822, 98);
+			this.roundButton2.Name = "roundButton2";
+			this.roundButton2.Size = new System.Drawing.Size(139, 61);
+			this.roundButton2.TabIndex = 2;
+			this.roundButton2.Text = "КУПИТЬ";
+			this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
+			// 
 			// priceLabelHuaweiWatch4
 			// 
 			this.priceLabelHuaweiWatch4.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -357,6 +437,26 @@
 			this.redmiWatch3NameLabel.Text = "Xiaomi Redmi Watch 3 Active Black ";
 			this.redmiWatch3NameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// roundButton1
+			// 
+			this.roundButton1.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton1.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton1.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton1.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton1.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton1.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton1.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton1.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton1.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton1.ButtonRoundRadius = 30;
+			this.roundButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton1.Location = new System.Drawing.Point(825, 92);
+			this.roundButton1.Name = "roundButton1";
+			this.roundButton1.Size = new System.Drawing.Size(139, 61);
+			this.roundButton1.TabIndex = 2;
+			this.roundButton1.Text = "КУПИТЬ";
+			this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+			// 
 			// priceLabelRedmiWatch3
 			// 
 			this.priceLabelRedmiWatch3.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -400,6 +500,26 @@
 			this.panel6.Size = new System.Drawing.Size(980, 764);
 			this.panel6.TabIndex = 3;
 			// 
+			// roundButton5
+			// 
+			this.roundButton5.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton5.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton5.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton5.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton5.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton5.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton5.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton5.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton5.ButtonRoundRadius = 30;
+			this.roundButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton5.Location = new System.Drawing.Point(396, 709);
+			this.roundButton5.Name = "roundButton5";
+			this.roundButton5.Size = new System.Drawing.Size(186, 54);
+			this.roundButton5.TabIndex = 1;
+			this.roundButton5.Text = "НАЗАД";
+			this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
+			// 
 			// panel7
 			// 
 			this.panel7.Controls.Add(this.listBox5);
@@ -438,6 +558,26 @@
 			this.HuaweiWatchFittNameLabel.TabIndex = 4;
 			this.HuaweiWatchFittNameLabel.Text = "Huawei Watch FIT 2 Active";
 			this.HuaweiWatchFittNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// roundButton6
+			// 
+			this.roundButton6.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton6.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton6.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton6.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton6.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton6.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton6.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton6.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton6.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton6.ButtonRoundRadius = 30;
+			this.roundButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton6.Location = new System.Drawing.Point(822, 98);
+			this.roundButton6.Name = "roundButton6";
+			this.roundButton6.Size = new System.Drawing.Size(139, 61);
+			this.roundButton6.TabIndex = 2;
+			this.roundButton6.Text = "КУПИТЬ";
+			this.roundButton6.Click += new System.EventHandler(this.roundButton6_Click);
 			// 
 			// priceLabelHuaweiWatchFit
 			// 
@@ -498,6 +638,26 @@
 			this.infinixNameLabel.Text = "Infinix Watch 1 (XW1)";
 			this.infinixNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// roundButton7
+			// 
+			this.roundButton7.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton7.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton7.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton7.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton7.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton7.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton7.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton7.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton7.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton7.ButtonRoundRadius = 30;
+			this.roundButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton7.Location = new System.Drawing.Point(822, 98);
+			this.roundButton7.Name = "roundButton7";
+			this.roundButton7.Size = new System.Drawing.Size(139, 61);
+			this.roundButton7.TabIndex = 2;
+			this.roundButton7.Text = "КУПИТЬ";
+			this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
+			// 
 			// priceLabelXInfinix
 			// 
 			this.priceLabelXInfinix.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -555,6 +715,26 @@
 			this.xiamiRedmiNameLabel.TabIndex = 4;
 			this.xiamiRedmiNameLabel.Text = "XIAOMI Redmi Watch 4";
 			this.xiamiRedmiNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// roundButton8
+			// 
+			this.roundButton8.BackColor = System.Drawing.Color.SkyBlue;
+			this.roundButton8.BackColor2 = System.Drawing.Color.SteelBlue;
+			this.roundButton8.ButtonBorderColor = System.Drawing.Color.Black;
+			this.roundButton8.ButtonHighlightColor = System.Drawing.Color.Orange;
+			this.roundButton8.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
+			this.roundButton8.ButtonHighlightForeColor = System.Drawing.Color.Black;
+			this.roundButton8.ButtonPressedColor = System.Drawing.Color.Red;
+			this.roundButton8.ButtonPressedColor2 = System.Drawing.Color.Maroon;
+			this.roundButton8.ButtonPressedForeColor = System.Drawing.Color.White;
+			this.roundButton8.ButtonRoundRadius = 30;
+			this.roundButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.roundButton8.Location = new System.Drawing.Point(822, 98);
+			this.roundButton8.Name = "roundButton8";
+			this.roundButton8.Size = new System.Drawing.Size(139, 61);
+			this.roundButton8.TabIndex = 2;
+			this.roundButton8.Text = "КУПИТЬ";
+			this.roundButton8.Click += new System.EventHandler(this.roundButton8_Click);
 			// 
 			// priceLabelXiamiRedmi
 			// 
@@ -615,205 +795,6 @@
 			this.samsungGalaxyNameLabel.Text = "SAMSUNG Galaxy Watch 6 ";
 			this.samsungGalaxyNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// priceLabelSamsung
-			// 
-			this.priceLabelSamsung.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.priceLabelSamsung.Location = new System.Drawing.Point(837, 49);
-			this.priceLabelSamsung.Name = "priceLabelSamsung";
-			this.priceLabelSamsung.Size = new System.Drawing.Size(127, 37);
-			this.priceLabelSamsung.TabIndex = 1;
-			this.priceLabelSamsung.Text = "899,00";
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(12, 12);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(156, 147);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox8.TabIndex = 0;
-			this.pictureBox8.TabStop = false;
-			// 
-			// backButton
-			// 
-			this.backButton.BackColor = System.Drawing.Color.SkyBlue;
-			this.backButton.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.backButton.ButtonBorderColor = System.Drawing.Color.Black;
-			this.backButton.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.backButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.backButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.backButton.ButtonPressedColor = System.Drawing.Color.Red;
-			this.backButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.backButton.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.backButton.ButtonRoundRadius = 30;
-			this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.backButton.Location = new System.Drawing.Point(396, 709);
-			this.backButton.Name = "backButton";
-			this.backButton.Size = new System.Drawing.Size(186, 54);
-			this.backButton.TabIndex = 1;
-			this.backButton.Text = "НАЗАД";
-			this.backButton.Click += new System.EventHandler(this.backButton_Click_1);
-			// 
-			// roundButton4
-			// 
-			this.roundButton4.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton4.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton4.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton4.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton4.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton4.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton4.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton4.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton4.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton4.ButtonRoundRadius = 30;
-			this.roundButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton4.Location = new System.Drawing.Point(822, 98);
-			this.roundButton4.Name = "roundButton4";
-			this.roundButton4.Size = new System.Drawing.Size(139, 61);
-			this.roundButton4.TabIndex = 2;
-			this.roundButton4.Text = "КУПИТЬ";
-			this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
-			// 
-			// roundButton3
-			// 
-			this.roundButton3.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton3.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton3.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton3.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton3.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton3.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton3.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton3.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton3.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton3.ButtonRoundRadius = 30;
-			this.roundButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton3.Location = new System.Drawing.Point(822, 98);
-			this.roundButton3.Name = "roundButton3";
-			this.roundButton3.Size = new System.Drawing.Size(139, 61);
-			this.roundButton3.TabIndex = 2;
-			this.roundButton3.Text = "КУПИТЬ";
-			this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
-			// 
-			// roundButton2
-			// 
-			this.roundButton2.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton2.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton2.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton2.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton2.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton2.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton2.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton2.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton2.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton2.ButtonRoundRadius = 30;
-			this.roundButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton2.Location = new System.Drawing.Point(822, 98);
-			this.roundButton2.Name = "roundButton2";
-			this.roundButton2.Size = new System.Drawing.Size(139, 61);
-			this.roundButton2.TabIndex = 2;
-			this.roundButton2.Text = "КУПИТЬ";
-			this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
-			// 
-			// roundButton1
-			// 
-			this.roundButton1.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton1.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton1.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton1.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton1.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton1.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton1.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton1.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton1.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton1.ButtonRoundRadius = 30;
-			this.roundButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton1.Location = new System.Drawing.Point(825, 92);
-			this.roundButton1.Name = "roundButton1";
-			this.roundButton1.Size = new System.Drawing.Size(139, 61);
-			this.roundButton1.TabIndex = 2;
-			this.roundButton1.Text = "КУПИТЬ";
-			this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
-			// 
-			// roundButton5
-			// 
-			this.roundButton5.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton5.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton5.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton5.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton5.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton5.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton5.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton5.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton5.ButtonRoundRadius = 30;
-			this.roundButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton5.Location = new System.Drawing.Point(396, 709);
-			this.roundButton5.Name = "roundButton5";
-			this.roundButton5.Size = new System.Drawing.Size(186, 54);
-			this.roundButton5.TabIndex = 1;
-			this.roundButton5.Text = "НАЗАД";
-			this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
-			// 
-			// roundButton6
-			// 
-			this.roundButton6.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton6.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton6.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton6.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton6.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton6.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton6.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton6.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton6.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton6.ButtonRoundRadius = 30;
-			this.roundButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton6.Location = new System.Drawing.Point(822, 98);
-			this.roundButton6.Name = "roundButton6";
-			this.roundButton6.Size = new System.Drawing.Size(139, 61);
-			this.roundButton6.TabIndex = 2;
-			this.roundButton6.Text = "КУПИТЬ";
-			this.roundButton6.Click += new System.EventHandler(this.roundButton6_Click);
-			// 
-			// roundButton7
-			// 
-			this.roundButton7.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton7.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton7.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton7.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton7.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton7.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton7.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton7.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton7.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton7.ButtonRoundRadius = 30;
-			this.roundButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton7.Location = new System.Drawing.Point(822, 98);
-			this.roundButton7.Name = "roundButton7";
-			this.roundButton7.Size = new System.Drawing.Size(139, 61);
-			this.roundButton7.TabIndex = 2;
-			this.roundButton7.Text = "КУПИТЬ";
-			this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
-			// 
-			// roundButton8
-			// 
-			this.roundButton8.BackColor = System.Drawing.Color.SkyBlue;
-			this.roundButton8.BackColor2 = System.Drawing.Color.SteelBlue;
-			this.roundButton8.ButtonBorderColor = System.Drawing.Color.Black;
-			this.roundButton8.ButtonHighlightColor = System.Drawing.Color.Orange;
-			this.roundButton8.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-			this.roundButton8.ButtonHighlightForeColor = System.Drawing.Color.Black;
-			this.roundButton8.ButtonPressedColor = System.Drawing.Color.Red;
-			this.roundButton8.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-			this.roundButton8.ButtonPressedForeColor = System.Drawing.Color.White;
-			this.roundButton8.ButtonRoundRadius = 30;
-			this.roundButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.roundButton8.Location = new System.Drawing.Point(822, 98);
-			this.roundButton8.Name = "roundButton8";
-			this.roundButton8.Size = new System.Drawing.Size(139, 61);
-			this.roundButton8.TabIndex = 2;
-			this.roundButton8.Text = "КУПИТЬ";
-			this.roundButton8.Click += new System.EventHandler(this.roundButton8_Click);
-			// 
 			// roundButton9
 			// 
 			this.roundButton9.BackColor = System.Drawing.Color.SkyBlue;
@@ -834,12 +815,33 @@
 			this.roundButton9.Text = "КУПИТЬ";
 			this.roundButton9.Click += new System.EventHandler(this.roundButton9_Click);
 			// 
+			// priceLabelSamsung
+			// 
+			this.priceLabelSamsung.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.priceLabelSamsung.Location = new System.Drawing.Point(837, 49);
+			this.priceLabelSamsung.Name = "priceLabelSamsung";
+			this.priceLabelSamsung.Size = new System.Drawing.Size(127, 37);
+			this.priceLabelSamsung.TabIndex = 1;
+			this.priceLabelSamsung.Text = "899,00";
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(12, 12);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(156, 147);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox8.TabIndex = 0;
+			this.pictureBox8.TabStop = false;
+			// 
 			// SmartwatchForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(994, 799);
 			this.Controls.Add(this.tabControl1);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "SmartwatchForm";
 			this.Text = "SmartwatchForm";
 			this.tabControl1.ResumeLayout(false);

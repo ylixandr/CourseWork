@@ -29,7 +29,7 @@ namespace Login_and_Register_System
 						ac.IsLoged = false;
 					}
 					dbContext.SaveChanges();
-					MessageBox.Show("Niharagua");
+					
 				}
 				catch (Exception ex)
 				{
@@ -75,7 +75,7 @@ namespace Login_and_Register_System
 						txtUsername.Text = "";
 						txtPassword.Text = "";
 						txtComPassword.Text = "";
-						MessageBox.Show("Аккаунт успешно создан", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						MessageBox.Show("Успешная регистрация", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
 					catch (Exception ex)
 					{
@@ -86,7 +86,7 @@ namespace Login_and_Register_System
 			}
 			else
 			{
-				MessageBox.Show("Пароли не совпадают, Попробуйте еще раз", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Попробуйте еще раз", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				txtComPassword.Text = "";
 				txtPassword.Text = "";
 				txtPassword.Focus();

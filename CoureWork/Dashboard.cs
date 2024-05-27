@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,6 +26,12 @@ namespace Login_and_Register_System
                 userNameLabel.Text = db.Account.FirstOrDefault(x => x.IsLoged).UserName.ToString();
 				balanceLabel.Text = db.Wallet.First(x => x.AccountId == db.Account.FirstOrDefault(a => a.IsLoged).Id).Balance.ToString();
 				cartBindingSource.DataSource = db.Cart.Where(x => x.AccountId == accountId).ToList();
+				var cartDetails = db.Cart
+						.Where(c => c.AccountId == accountId)
+						.Select(c => new { Price = c.ProductPrice })
+						.ToList();
+				decimal productsPrice = cartDetails.Sum(c => c.Price);
+				label6.Text = productsPrice.ToString();
 			}
 			
 			
@@ -79,6 +86,7 @@ namespace Login_and_Register_System
 						.ToList();
 
 					decimal productsPrice = cartDetails.Sum(c => c.Price);
+					
 
 					
 					if (accountWalletBalance < productsPrice)
@@ -109,6 +117,7 @@ namespace Login_and_Register_System
 		private void ClearButton_Click(object sender, EventArgs e)
 		{
 			ClearCart();
+			StockDep();
 		}
 
 		private void ClearCart()
@@ -151,5 +160,58 @@ namespace Login_and_Register_System
 			return id;
 		}
 
+		private void dataGridViewCart_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+		private void StockDep()
+		{
+			using (ApplicationDbContext db = new ApplicationDbContext())
+			{
+
+				int accountId = GetAccountId();
+				
+
+				// Обновление количества товаров на складе
+				foreach (var item in db.Cart.Where(c => c.AccountId == accountId).ToList())
+				{
+					switch (item.CategoryId)
+					{
+						case 1:
+							var smartphone = db.Smartphone.FirstOrDefault(s => s.Id == item.ProductId);
+							if (smartphone != null)
+							{
+								smartphone.Stock += 1;
+							}
+							break;
+						case 4:
+							var laptop = db.Laptop.FirstOrDefault(l => l.Id == item.ProductId);
+							if (laptop != null)
+							{
+								laptop.Stock += 1;
+							}
+							break;
+						case 2:
+							var tv = db.TV.FirstOrDefault(t => t.Id == item.ProductId);
+							if (tv != null)
+							{
+								tv.Stock += 1;
+							}
+							break;
+						case 3:
+							var smartwatch = db.Smartwatch.FirstOrDefault(sw => sw.Id == item.ProductId);
+							if (smartwatch != null)
+							{
+								smartwatch.Stock += 1;
+							}
+							break;
+					}
+				}
+			}
+		}
+		private void label6_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

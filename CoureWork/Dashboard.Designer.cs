@@ -32,6 +32,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.walletButton = new System.Windows.Forms.Button();
 			this.homeButton = new System.Windows.Forms.Button();
@@ -42,9 +44,6 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.userNameLabel = new System.Windows.Forms.Label();
 			this.dataGridViewCart = new System.Windows.Forms.DataGridView();
-			this.cartBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.electronicStoreDataSet = new CoureWork.ElectronicStoreDataSet();
-			this.cartTableAdapter = new CoureWork.ElectronicStoreDataSetTableAdapters.CartTableAdapter();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.accountIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +52,9 @@
 			this.productPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.productTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.cartBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.electronicStoreDataSet = new CoureWork.ElectronicStoreDataSet();
+			this.cartTableAdapter = new CoureWork.ElectronicStoreDataSetTableAdapters.CartTableAdapter();
 			this.ClearButton = new CoureWork.RoundButton();
 			this.orderButton = new CoureWork.RoundButton();
 			this.panel1.SuspendLayout();
@@ -77,6 +79,8 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+			this.panel1.Controls.Add(this.label6);
+			this.panel1.Controls.Add(this.label5);
 			this.panel1.Controls.Add(this.label3);
 			this.panel1.Controls.Add(this.walletButton);
 			this.panel1.Controls.Add(this.homeButton);
@@ -86,6 +90,31 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(248, 747);
 			this.panel1.TabIndex = 1;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+			this.label6.Location = new System.Drawing.Point(91, 384);
+			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(33, 33);
+			this.label6.TabIndex = 6;
+			this.label6.Text = "0";
+			this.label6.Click += new System.EventHandler(this.label6_Click);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+			this.label5.Location = new System.Drawing.Point(-3, 367);
+			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(227, 15);
+			this.label5.TabIndex = 4;
+			this.label5.Text = "Сумма в корзине";
 			// 
 			// label3
 			// 
@@ -160,12 +189,12 @@
 			// balanceLabel
 			// 
 			this.balanceLabel.AutoSize = true;
-			this.balanceLabel.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.balanceLabel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.balanceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-			this.balanceLabel.Location = new System.Drawing.Point(94, 147);
+			this.balanceLabel.Location = new System.Drawing.Point(137, 147);
 			this.balanceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.balanceLabel.Name = "balanceLabel";
-			this.balanceLabel.Size = new System.Drawing.Size(73, 17);
+			this.balanceLabel.Size = new System.Drawing.Size(83, 20);
 			this.balanceLabel.TabIndex = 2;
 			this.balanceLabel.Text = "Balance";
 			// 
@@ -177,9 +206,9 @@
 			this.label2.Location = new System.Drawing.Point(13, 147);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(73, 17);
+			this.label2.Size = new System.Drawing.Size(116, 17);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Balance";
+			this.label2.Text = "Баланс";
 			// 
 			// pictureBox1
 			// 
@@ -195,12 +224,12 @@
 			// userNameLabel
 			// 
 			this.userNameLabel.AutoSize = true;
-			this.userNameLabel.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.userNameLabel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-			this.userNameLabel.Location = new System.Drawing.Point(94, 111);
+			this.userNameLabel.Location = new System.Drawing.Point(110, 108);
 			this.userNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.userNameLabel.Name = "userNameLabel";
-			this.userNameLabel.Size = new System.Drawing.Size(100, 17);
+			this.userNameLabel.Size = new System.Drawing.Size(114, 20);
 			this.userNameLabel.TabIndex = 0;
 			this.userNameLabel.Text = "Some user ";
 			this.userNameLabel.Click += new System.EventHandler(this.label2_Click);
@@ -226,20 +255,7 @@
 			this.dataGridViewCart.RowTemplate.Height = 24;
 			this.dataGridViewCart.Size = new System.Drawing.Size(1331, 686);
 			this.dataGridViewCart.TabIndex = 3;
-			// 
-			// cartBindingSource
-			// 
-			this.cartBindingSource.DataMember = "Cart";
-			this.cartBindingSource.DataSource = this.electronicStoreDataSet;
-			// 
-			// electronicStoreDataSet
-			// 
-			this.electronicStoreDataSet.DataSetName = "ElectronicStoreDataSet";
-			this.electronicStoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// cartTableAdapter
-			// 
-			this.cartTableAdapter.ClearBeforeFill = true;
+			this.dataGridViewCart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCart_CellContentClick);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -306,6 +322,20 @@
 			this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
 			this.productNameDataGridViewTextBoxColumn.Width = 200;
 			// 
+			// cartBindingSource
+			// 
+			this.cartBindingSource.DataMember = "Cart";
+			this.cartBindingSource.DataSource = this.electronicStoreDataSet;
+			// 
+			// electronicStoreDataSet
+			// 
+			this.electronicStoreDataSet.DataSetName = "ElectronicStoreDataSet";
+			this.electronicStoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
+			// cartTableAdapter
+			// 
+			this.cartTableAdapter.ClearBeforeFill = true;
+			// 
 			// ClearButton
 			// 
 			this.ClearButton.BackColor = System.Drawing.Color.Gainsboro;
@@ -366,6 +396,7 @@
 			this.Text = "Dashboard";
 			this.Load += new System.EventHandler(this.Dashboard_Load);
 			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -403,5 +434,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn productPriceDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn productTypeDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label5;
 	}
 }
